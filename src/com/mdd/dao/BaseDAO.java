@@ -14,7 +14,7 @@ import com.mdd.util.HibernateUtil;
 public class BaseDAO {
 	/**
 	 * @param obj
-	 *            Ìí¼ÓÊý¾Ý
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return
 	 */
 	public static boolean add(Object obj) {
@@ -31,12 +31,12 @@ public class BaseDAO {
 		} catch (Exception e) {
 			System.out.println("basoDAO error: " + e);
 			if (tran != null) {
-				// ÊÂÎï»Ø¹ö
+				// ï¿½ï¿½ï¿½ï¿½Ø¹ï¿½
 				tran.rollback();
 			}
 		} finally {
 			if (session != null) {
-				// ¹Ø±Õsession
+				// ï¿½Ø±ï¿½session
 				session.close();
 			}
 		}
@@ -44,7 +44,7 @@ public class BaseDAO {
 	}
 
 	/**
-	 * @return ¸üÐÂÊý¾Ý ²ÎÊýÎªÐÞ¸ÄµÄÖ÷¼üid¶ÔÏó
+	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Îªï¿½Þ¸Äµï¿½ï¿½ï¿½ï¿½ï¿½idï¿½ï¿½ï¿½ï¿½
 	 */
 	public static boolean update(Object object) {
 		Session session = null;
@@ -58,12 +58,12 @@ public class BaseDAO {
 			result = true;
 		} catch (Exception e) {
 			if (tran != null) {
-				// ÊÂÎï»Ø¹ö
+				// ï¿½ï¿½ï¿½ï¿½Ø¹ï¿½
 				tran.rollback();
 			}
 		} finally {
 			if (session != null) {
-				// ¹Ø±Õsession
+				// ï¿½Ø±ï¿½session
 				session.close();
 			}
 		}
@@ -73,7 +73,7 @@ public class BaseDAO {
 	/**
 	 * @param c
 	 * @param id
-	 *            ²éÑ¯Ò»ÌõÊý¾Ý¸ù¾ÝÖ÷¼üµÄidºÅ
+	 *            ï¿½ï¿½Ñ¯Ò»ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½idï¿½ï¿½
 	 * @return
 	 */
 	public static Object get(Class c, String id) {
@@ -85,7 +85,7 @@ public class BaseDAO {
 		} catch (Exception e) {
 		} finally {
 			if (session != null) {
-				// ¹Ø±Õsession
+				// ï¿½Ø±ï¿½session
 				session.close();
 			}
 		}
@@ -94,7 +94,7 @@ public class BaseDAO {
 
 	/**
 	 * @param obj
-	 * @return É¾³ýÊý¾Ý
+	 * @return É¾ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	public static boolean delete(Object obj) {
 		Session session = null;
@@ -108,12 +108,12 @@ public class BaseDAO {
 			result = true;
 		} catch (Exception e) {
 			if (tran != null) {
-				// ÊÂÎï»Ø¹ö
+				// ï¿½ï¿½ï¿½ï¿½Ø¹ï¿½
 				tran.rollback();
 			}
 		} finally {
 			if (session != null) {
-				// ¹Ø±Õsession
+				// ï¿½Ø±ï¿½session
 				session.close();
 			}
 		}
@@ -122,11 +122,11 @@ public class BaseDAO {
 
 	/**
 	 * @param <T>
-	 *            ²éÑ¯¶àÌõ¼ÇÂ¼
+	 *            ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼
 	 * @param sql
-	 *            sqlÓï¾ä
+	 *            sqlï¿½ï¿½ï¿½
 	 * @param param
-	 *            ²ÎÊýÊý×é
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
@@ -144,6 +144,7 @@ public class BaseDAO {
 			}
 			list = query.list();
 		} catch (Exception e) {
+			e.printStackTrace();
 		} finally {
 			if (session != null) {
 				session.close();
@@ -155,7 +156,7 @@ public class BaseDAO {
 	/**
 	 * @param sql
 	 * @param param
-	 *            ²éÑ¯µ¥Ìõ¼ÇÂ¼
+	 *            ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼
 	 * @return
 	 */
 	public static Object queryOne(String sql, String[] param) {
@@ -185,7 +186,7 @@ public class BaseDAO {
 	 * @param param
 	 * @param page
 	 * @param size
-	 * @return ÊµÏÖ·ÖÒ³²éÑ¯
+	 * @return Êµï¿½Ö·ï¿½Ò³ï¿½ï¿½Ñ¯
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> List<T> queryByPage(String sql, String[] param, int page,
@@ -200,7 +201,7 @@ public class BaseDAO {
 					query.setString(i, param[i]);
 				}
 			}
-			// É¸Ñ¡ÌõÊý
+			// É¸Ñ¡ï¿½ï¿½ï¿½ï¿½
 			query.setFirstResult((page - 1) * size);
 			query.setMaxResults(size);
 			list = query.list();
@@ -216,7 +217,7 @@ public class BaseDAO {
 	/**
 	 * @param hql
 	 * @param pras
-	 * @return·µ»ØÊý¾Ý¸öÊý
+	 * @returnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½
 	 */
 	public static int getCount(String hql, String[] pras) {
 		int resu = 0;

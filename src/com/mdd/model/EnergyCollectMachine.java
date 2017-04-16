@@ -27,6 +27,18 @@ public class EnergyCollectMachine implements java.io.Serializable {
 
 	/** default constructor */
 	public EnergyCollectMachine() {
+		eid = "";
+		machineName = "";
+		machineType = "";
+		machineCode = "";
+		longitude = 0.00;
+		latitude = 0.00;
+		createBy = "";
+		createTime = new Date();
+		updateBy = "";
+		updateTime = new Date();
+		remove = "";
+		machineAddr = "";
 	}
 
 	/** minimal constructor */
