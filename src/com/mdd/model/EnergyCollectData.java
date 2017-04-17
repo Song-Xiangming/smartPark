@@ -28,6 +28,18 @@ public class EnergyCollectData implements java.io.Serializable {
 
 	/** default constructor */
 	public EnergyCollectData() {
+		eid = "";
+		uploadType = "";
+		subsystemId = "";
+		collectorId = "";
+		dataSequence = "";
+		terminalId = "";
+		spotId = "";
+		coding = "";
+		collectValue = new BigDecimal(0);
+		createTime = new Date();
+		sampleTime = new Date();
+		remove = "";
 	}
 
 	/** minimal constructor */

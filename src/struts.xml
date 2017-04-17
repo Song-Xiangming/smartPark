@@ -9,9 +9,43 @@
 	<constant name="struts.devMode" value="false" />
 
 	<package name="default" namespace="/" extends="struts-default">
+		<!-- 第一个Action案例 -->
+		<action name="helloworld" class="action.page.QuerySqlInputAction"
+			method="execute">
+			<result>/WEB-INF/Query.jsp</result>
+		</action>
 
+		<action name="query" class="action.QueryDataAction" method="execute">
+			<result name="success">/WEB-INF/QueryResult.jsp</result>
+		</action>
+		
+		<action name="getAllObj" class="action.GetAllObjectContentAction"
+			method="execute">
+			<result name="success">/WEB-INF/AllObject.jsp</result>
+		</action>
 
+		<action name="deletedata" class="action.DeleteDataAction" method="execute">
+			<result name="success">/WEB-INF/Success.jsp</result>
+		</action>
+
+		<action name="updatedata" class="action.UpdateDataAction" method="execute">
+			<result name="success">/WEB-INF/Success.jsp</result>
+			<result name="false">/WEB-INF/False.jsp</result>
+		</action>
+		
+		<action name="updateinput" class="action.page.UpdateDataInputAction" method="execute">
+			<result name="success">/WEB-INF/Table.jsp</result>
+			<result name="false">/WEB-INF/False.jsp</result>
+		</action>
+		
+				<action name="deleteinput" class="action.page.DeleteDataInputAction" method="execute">
+			<result name="success">/WEB-INF/Delete.jsp</result>
+			<result name="false">/WEB-INF/False.jsp</result>
+		</action>
+		
 	</package>
+	
+	
 	<package name="users" namespace="/users" extends="default">
 		<action name="*_*" class="action.{1}Action" method="{2}">
 			<result name="login_success">/users/Users_login_success.jsp</result>
