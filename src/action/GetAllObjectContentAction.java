@@ -14,8 +14,8 @@ public class GetAllObjectContentAction extends ActionSupport {
 	@Override
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
-		String result = "[" + jsonPart(energyCollectData)+","
-				+ jsonPart(energyCollectMachine) + "]";
+		String result = "{" + jsonPart(energyCollectData)+","
+				+ jsonPart(energyCollectMachine) + "}";
 		ServletActionContext.getRequest().setAttribute("result",result);
 		return SUCCESS;
 	}
@@ -26,13 +26,11 @@ public class GetAllObjectContentAction extends ActionSupport {
 			result.subSequence(1, length - 2);
 		else
 			result = "";
-		
-		 String name = o.getClass().getSimpleName();
+		String name = o.getClass().getSimpleName();
 		String firstString = name.substring(0, 1);
 		firstString = firstString.toLowerCase();
 		name = firstString + name.substring(1);
-		return name +":"+result;
-
+		return ("\"" + name + "\"" +":"+result).replace('\"','\'');
 	}
 
 }

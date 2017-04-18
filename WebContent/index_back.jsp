@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <script type="text/javascript" src="./easyui/locale/easyui-lang-zh_CN.js"></script>
   </head>
 <body>
-    <h1>智慧化工园区查询系统</h1>
+    <h1 style="display:none">智慧化工园区查询系统</h1>
     <input class="easyui-combobox" data-options="
     		valueField: 'value',
     		textField: 'label',
@@ -65,10 +65,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<a id="confirm" href="javascript:void(0)" class="easyui-linkbutton">确认</a>
     	<a id="cancel" href="javascript:void(0)" class="easyui-linkbutton">取消</a>
     </div>
+    <div id="dataContainer" style="display: none"></div>
 
 
     <script type="text/javascript">
     	$(function(){
+    		$('#dataContainer').load('getAllObj.action',{},function () {
+    			console.log(JSON.parse($('#Object').val().replace(/\'/g,'\"')));
+    		});
     	    $('#search').bind('click', function(){
     			var jsonstr = '{"total":10,"rows":[{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false},{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false},{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false},{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false},{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false},{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false},{"checkbox":true,"code":"M000005","name":"检测设备","sortid":3,"valid":"1","handler":"系统管理员","editing":false}]}';
 				var data = $.parseJSON(jsonstr);
