@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <input id="Object" name="result" value="${result}">
+    <input id="Object" name="result" value="${result}" data-name="${name}">
     这里是显示错误，这是一个包含两个对象及其属性的字符串，可以在GetAllObjectContentAction中第十九行赋值ServletActionContext.getRequest().setAttribute("result",result);
   </body>
 </html>
