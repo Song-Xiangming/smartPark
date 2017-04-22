@@ -25,6 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
 "#request.content"
+<input id="Object" name="content" value="${content}">
 <!--  <s:iterator id="stu" value = "#request.stus" >
 <s:property value="#stu.name"/>
 <s:property value="#stu.age"/>

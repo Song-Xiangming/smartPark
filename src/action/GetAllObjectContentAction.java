@@ -17,8 +17,6 @@ public class GetAllObjectContentAction extends ActionSupport {
 		String result = "{" + jsonPart(energyCollectData)+","
 				+ jsonPart(energyCollectMachine) + "}";
 		ServletActionContext.getRequest().setAttribute("result",result);
-		// mock数据
-		ServletActionContext.getRequest().setAttribute("name","采集点数据,编号,采集值,采集ID,创建时间,数据序列,eid,是否移除,取样时间,地点ID,分系统ID,终点ID,上传类型;能源采集机器,创建人,创建时间,eid,经度,纬度,机器地址,机器编码,机器名,机器类型,是否移除,更新人,更新时间");
 		return SUCCESS;
 	}
 	private String jsonPart(Object o) {
