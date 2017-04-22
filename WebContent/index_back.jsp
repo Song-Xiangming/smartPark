@@ -166,7 +166,7 @@
 							}
 							data[tableName + '.' + elt] = element[elt];
 					});
-					$.post('action.DeleteDataAction',data);
+					$.post('deletedata.action',data);
 				})
 				$('#dg').datagrid('reload');
 				$.messager.alert('', '删除成功', 'info');
@@ -210,7 +210,7 @@
 							}
 							data[tableName + '.' + elt] = rowsData[editIndex][elt];
 					});
-					$.post('action.UpdateDataAction',data);
+					$.post('updatedata.action',data);
 					$('#dg').datagrid('reload');
 					$.messager.alert('', '编辑成功', 'info');
 					editIndex = undefined;
