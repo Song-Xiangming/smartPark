@@ -36,7 +36,7 @@ public class QueryDataAction extends ActionSupport {
 		// list.add(new EnergyCollectData());
 		// list.add(new EnergyCollectMachine());
 		String content = JSONSerializer.serialize(list);
-		ServletActionContext.getRequest().setAttribute("content", content);
+		ServletActionContext.getRequest().setAttribute("content", content.replace('\"','\''));
 		return SUCCESS;
 	}
 
