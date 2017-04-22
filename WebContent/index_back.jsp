@@ -136,7 +136,7 @@
 					return;
 				}
 				console.log(value.firstUpperCase());
-				$('#dataContainer').load('query.action', {sqlString:value}, function () {
+				$('#dataContainer').load('query.action', {sqlString:value.firstUpperCase()}, function () {
 					// 真数据
 					var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
 					// mook数据开始
