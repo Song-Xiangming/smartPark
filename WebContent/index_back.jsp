@@ -72,6 +72,7 @@
 		var tableName = '';
 		var page = 1;
 		var pageSize = 20;
+		var canEdit = true;
 		// 首字母大写
 		String.prototype.firstUpperCase=function(){
 		    return this.replace(/^\S/,function(s){return s.toUpperCase();});
@@ -87,15 +88,23 @@
 				pageSize: pageSize,
 				page: page
 			}, function (json, status) {
+				canEdit = true;
 				// 真数据
 				var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
+				// mook数据开始
+				var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
+				var data = JSON.parse(mookData.replace(/'/g, "\""));
 				if (data.length === 0) {
 					$.messager.alert('错误', '获取数据失败', 'error');
 					return;
 				}
-				// mook数据开始
-				// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
-				// var data = JSON.parse(mookData.replace(/'/g, "\""));
+				data.forEach(function (element) {
+					Object.keys(element).forEach(function(elt, i, array) {
+						if (elt.indexOf('Time') !== -1) {
+							element[elt] = new Date(element[elt]);
+						}
+					});
+				});
 				// mook数据结束
 				var tableData = {}
 				tableData.total = data[0].total;
@@ -195,8 +204,8 @@
 					// 真数据
 					var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
 					// mook数据开始
-					// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
-					// var data = JSON.parse(mookData.replace(/'/g, "\""));
+					var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
+					var data = JSON.parse(mookData.replace(/'/g, "\""));
 					// mook数据结束
 					if (data.length === 0) {
 						$.messager.alert('错误', '获取数据失败', 'error');
@@ -208,7 +217,7 @@
 								element[elt] = new Date(element[elt]);
 							}
 						});
-					})
+					});
 					var tableData = {}
 					tableData.total = data[0].total;
 					tableData.rows = data;
@@ -272,6 +281,7 @@
 				}
 				if ($('#dg').datagrid('validateRow', editIndex)) {
 					$('#dg').datagrid('endEdit', editIndex);
+					canEdit = false;
 					var rowsData = $('#dg').datagrid('getRows');
 					var data = {};
 					Object.keys(rowsData[editIndex]).forEach(function(elt, i, array) {
@@ -281,14 +291,13 @@
 							data[tableName + '.' + elt] = rowsData[editIndex][elt];
 					});
 					$('#dataContainer').load('updatedata.action',data, function() {
-						if ($('#result').text() === 'SUCCESS') {
+						if (!($('#result').text() === 'SUCCESS')) {
 							query();
 						}
 						else {
 							$.messager.alert('失败', '编辑失败', 'error');
 						}
 					});
-
 					editIndex = undefined;
 					return true;
 				} else {
@@ -296,7 +305,7 @@
 				}
 			}
 			function onClickCell(index, field) {
-				if (endEditing()) {
+				if (endEditing() && canEdit) {
 					$('#dg').datagrid('selectRow', index)
 						.datagrid('editCell', {
 							index : index,
