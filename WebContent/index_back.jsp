@@ -69,16 +69,55 @@
 		var allObject = {};
 		// 现在的表名
 		var tableName = '';
+		var page = 1;
+		var pageSize = 20;
 		// 首字母大写
 		String.prototype.firstUpperCase=function(){
 		    return this.replace(/^\S/,function(s){return s.toUpperCase();});
+		}
+		function query() {
+			var value = $('#selectTable').combobox('getValue');
+			if(!value) {
+				$.messager.alert('错误', '请选择表', 'error');
+				return;
+			}
+			$('#dataContainer').load('query.action', {
+				sqlString:value.firstUpperCase(),
+				pageSize: pageSize,
+				page: page
+			}, function (json, status) {
+				// 真数据
+				var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
+				if (data.length === 0) {
+					$.messager.alert('错误', '操作失败', 'error');
+					return;
+				}
+				// mook数据开始
+				// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
+				// var data = JSON.parse(mookData.replace(/'/g, "\""));
+				// mook数据结束
+				var tableData = {}
+				tableData.total = data[0].total;
+				tableData.rows = data;
+				$('#dg').datagrid('loadData', tableData); //将数据绑定到datagrid
+				$.messager.alert('成功', '操作成功', 'info');
+			});
 		}
 		$(function() {
 			// 列表初始化
 			$('#dg').datagrid({
 				pagination : true,
 				iconCls : 'icon-edit',
-				onClickCell : onClickCell
+				onClickCell : onClickCell,
+				pageList: [10, 20, 50]
+			});
+			var pg = $("#dg").datagrid("getPager");
+			$(pg).pagination({
+				onSelectPage:function(pageNumber, pageSize){
+					page = pageNumber;
+					pageSize = pageSize;
+					query();
+				}
 			});
 			// 分系统,表,属性初始化
 			$('#dataContainer').load('getAllObj.action', {}, function() {
@@ -124,12 +163,26 @@
 						});
 						$('#dg').datagrid({
 							columns: [columns]
-						})
+						});
+						var pg = $("#dg").datagrid("getPager");
+						$(pg).pagination({
+							onSelectPage:function(pageNumber, pageSize){
+								console.log(pageNumber);
+								console.log(pageSize);
+								page = pageNumber;
+								pageSize = pageSize;
+								query();
+								console.log(666);
+							}
+						});
 					}
 				});
 			});
 			// 查询
 			$('#search').bind('click', function() {
+				// 当前页,页面大小重置
+				page = 1;
+				pageSize = 10;
 				var value = $('#selectTable').combobox('getValue');
 				if(!value) {
 					$.messager.alert('错误', '请选择表', 'error');
@@ -137,8 +190,8 @@
 				}
 				$('#dataContainer').load('query.action', {
 					sqlString:value.firstUpperCase(),
-					pageSize: 20,
-					page: 1
+					pageSize: pageSize,
+					page: page
 				}, function () {
 					// 真数据
 					var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
@@ -149,7 +202,6 @@
 					var tableData = {}
 					tableData.total = data[0].total;
 					tableData.rows = data;
-					console.log(tableData);
 					$('#dg').datagrid('loadData', tableData); //将数据绑定到datagrid
 				});
 			});
@@ -171,8 +223,7 @@
 					});
 					$.post('deletedata.action',data);
 				})
-				$('#dg').datagrid('reload');
-				$.messager.alert('', '删除成功', 'info');
+				query();
 			});
 			$('#cancel').bind('click', function() {
 				$('#dialog').dialog('close');
@@ -214,8 +265,7 @@
 							data[tableName + '.' + elt] = rowsData[editIndex][elt];
 					});
 					$.post('updatedata.action',data);
-					$('#dg').datagrid('reload');
-					$.messager.alert('', '编辑成功', 'info');
+					query();
 					editIndex = undefined;
 					return true;
 				} else {
