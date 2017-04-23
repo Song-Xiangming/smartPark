@@ -10,16 +10,6 @@ public class UpdateDataAction extends ActionSupport{
 	EnergyCollectMachine energyCollectMachine = new EnergyCollectMachine();
 	int targetString = 0;
 
-	public EnergyCollectMachine getEnergyCollectMachine() {
-		targetString = 2;
-		return energyCollectMachine;
-	}
-
-	public void setEnergyCollectMachine(
-			EnergyCollectMachine energyCollectMachine) {
-		this.energyCollectMachine = energyCollectMachine;
-	}
-
 	@Override
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
@@ -52,4 +42,15 @@ public class UpdateDataAction extends ActionSupport{
 	public void setEnergyCollectData(EnergyCollectData energyCollectData) {
 		this.energyCollectData = energyCollectData;
 	}
+	
+	public EnergyCollectMachine getEnergyCollectMachine() {
+		targetString = 2;
+		return energyCollectMachine;
+	}
+
+	public void setEnergyCollectMachine(
+			EnergyCollectMachine energyCollectMachine) {
+		this.energyCollectMachine = energyCollectMachine;
+	}
+	
 }
