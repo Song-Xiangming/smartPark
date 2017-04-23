@@ -92,8 +92,9 @@
 				// 真数据
 				var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
 				// mook数据开始
-				var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
-				var data = JSON.parse(mookData.replace(/'/g, "\""));
+				// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
+				// var data = JSON.parse(mookData.replace(/'/g, "\""));
+				// mook数据结束
 				if (data.length === 0) {
 					$.messager.alert('错误', '获取数据失败', 'error');
 					return;
@@ -105,7 +106,6 @@
 						}
 					});
 				});
-				// mook数据结束
 				var tableData = {}
 				tableData.total = data[0].total;
 				tableData.rows = data;
@@ -204,8 +204,8 @@
 					// 真数据
 					var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
 					// mook数据开始
-					var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
-					var data = JSON.parse(mookData.replace(/'/g, "\""));
+					// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
+					// var data = JSON.parse(mookData.replace(/'/g, "\""));
 					// mook数据结束
 					if (data.length === 0) {
 						$.messager.alert('错误', '获取数据失败', 'error');
