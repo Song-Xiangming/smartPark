@@ -22,7 +22,7 @@ public class QueryDataAction extends ActionSupport {
 	public String sqlString = "";
 	public String pageSize = "";
 	public String page = "";
-	public List<EnergyCollectData> list = new ArrayList<EnergyCollectData>();
+	public List<Object> list = new ArrayList<Object>();
 
 	@Override
 	public String execute() throws Exception {
@@ -45,6 +45,15 @@ public class QueryDataAction extends ActionSupport {
 		ServletActionContext.getRequest().setAttribute("content",
 				content.replace('\"', '\''));
 		return SUCCESS;
+	}
+	
+	public String dealJson(String json){
+		String[] strings = json.split("},");
+		for(int i = 0;i<strings.length;i++){
+			
+		}
+		return json;
+		
 	}
 
 	public String getSqlString() {
