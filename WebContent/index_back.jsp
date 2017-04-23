@@ -135,8 +135,11 @@
 					$.messager.alert('错误', '请选择表', 'error');
 					return;
 				}
-				console.log(value.firstUpperCase());
-				$('#dataContainer').load('query.action', {sqlString:value.firstUpperCase()}, function () {
+				$('#dataContainer').load('query.action', {
+					sqlString:value.firstUpperCase(),
+					pageSize: 20,
+					page: 1
+				}, function () {
 					// 真数据
 					var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
 					// mook数据开始
