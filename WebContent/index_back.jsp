@@ -115,8 +115,8 @@
 			$(pg).pagination({
 				showRefresh: false,
 				onSelectPage:function(pageNumber, pageSize){
-					page = pageNumber;
-					pageSize = pageSize;
+					window.page = pageNumber;
+					window.pageSize = pageSize;
 					query();
 				}
 			});
@@ -169,8 +169,8 @@
 						$(pg).pagination({
 							showRefresh: false,
 							onSelectPage:function(pageNumber, pageSize){
-								page = pageNumber;
-								pageSize = pageSize;
+								window.page = pageNumber;
+								window.pageSize = pageSize;
 								query();
 							}
 						});
