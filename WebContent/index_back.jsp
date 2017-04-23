@@ -89,7 +89,7 @@
 				// 真数据
 				var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
 				if (data.length === 0) {
-					$.messager.alert('错误', '操作失败', 'error');
+					$.messager.alert('错误', '获取数据失败', 'error');
 					return;
 				}
 				// mook数据开始
@@ -100,7 +100,6 @@
 				tableData.total = data[0].total;
 				tableData.rows = data;
 				$('#dg').datagrid('loadData', tableData); //将数据绑定到datagrid
-				$.messager.alert('成功', '操作成功', 'info');
 			});
 		}
 		$(function() {
@@ -167,12 +166,9 @@
 						var pg = $("#dg").datagrid("getPager");
 						$(pg).pagination({
 							onSelectPage:function(pageNumber, pageSize){
-								console.log(pageNumber);
-								console.log(pageSize);
 								page = pageNumber;
 								pageSize = pageSize;
 								query();
-								console.log(666);
 							}
 						});
 					}
@@ -199,6 +195,10 @@
 					// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
 					// var data = JSON.parse(mookData.replace(/'/g, "\""));
 					// mook数据结束
+					if (data.length === 0) {
+						$.messager.alert('错误', '获取数据失败', 'error');
+						return;
+					}
 					var tableData = {}
 					tableData.total = data[0].total;
 					tableData.rows = data;
@@ -221,9 +221,15 @@
 							}
 							data[tableName + '.' + elt] = element[elt];
 					});
-					$.post('deletedata.action',data);
-				})
-				query();
+					$('#dataContainer').load('deletedata.action',data, function() {
+						if ($('#result').text() === 'SUCCESS') {
+							query();
+						}
+						else {
+							$.messager.alert('失败', '删除失败', 'error');
+						}
+					});
+				});
 			});
 			$('#cancel').bind('click', function() {
 				$('#dialog').dialog('close');
@@ -264,8 +270,15 @@
 							}
 							data[tableName + '.' + elt] = rowsData[editIndex][elt];
 					});
-					$.post('updatedata.action',data);
-					query();
+					$('#dataContainer').load('updatedata.action',data, function() {
+						if ($('#result').text() === 'SUCCESS') {
+							query();
+						}
+						else {
+							$.messager.alert('失败', '编辑失败', 'error');
+						}
+					});
+
 					editIndex = undefined;
 					return true;
 				} else {
