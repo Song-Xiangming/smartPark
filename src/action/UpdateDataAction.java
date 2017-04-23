@@ -30,7 +30,7 @@ public class UpdateDataAction extends ActionSupport{
 			break;
 
 		case 2:
-			b = BaseDAO.update(energyCollectData);
+			b = BaseDAO.update(energyCollectMachine);
 			break;
 
 		default:

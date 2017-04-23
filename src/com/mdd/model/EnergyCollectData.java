@@ -1,6 +1,7 @@
 package com.mdd.model;
 
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -145,6 +146,15 @@ public class EnergyCollectData implements java.io.Serializable {
 	}
 
 	public void setCreateTime(Date createTime) {
+//		System.out.println(createTime);
+//		Date date = null;
+//		try {
+//			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//			date = sdf.parse(createTime);
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//		}
+
 		this.createTime = createTime;
 	}
 

@@ -13,8 +13,8 @@
 	<form action="updatedata.action" method="post">
 		energyCollectData.eid<input type="text" name="energyCollectData.eid"><br /> 
 		energyCollectData.uploadType<input type="text" name="energyCollectData.uploadType"><br /> 
-		energyCollectData.subsystemId<input type="text" name="energyCollectData.subsystemId"><br /> 
-		energyCollectData.collectorId<input type="text" name="energyCollectData.collectorId"><br />
+		energyCollectData.subsystemId<input type="text" name="energyCollectData.contentValue"><br /> 
+		energyCollectData.collectorId<input type="text" name="energyCollectData.creatTime"><br />
 		<input type="submit" value="更新">
 	</form>
 </body>

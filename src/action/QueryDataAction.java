@@ -20,6 +20,8 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class QueryDataAction extends ActionSupport {
 	public String sqlString = "";
+	public String pageSize = "";
+	public String page = "";
 	public List<EnergyCollectData> list = new ArrayList<EnergyCollectData>();
 
 	@Override
@@ -31,12 +33,17 @@ public class QueryDataAction extends ActionSupport {
 		firstString = firstString.toLowerCase();
 		sqlString = "from " + sqlString + " " + firstString
 				+ sqlString.substring(1);
-		list = BaseDAO.query(sqlString, null);
-		// List<Object> list = new ArrayList<Object>();
-		// list.add(new EnergyCollectData());
-		// list.add(new EnergyCollectMachine());
+		if(page.equals("")||pageSize.equals(""))
+			list = BaseDAO.query(sqlString, null);
+		else
+			list = BaseDAO.queryByPage(sqlString, null, Integer.parseInt(page),
+				Integer.parseInt(pageSize));
 		String content = JSONSerializer.serialize(list);
-		ServletActionContext.getRequest().setAttribute("content", content.replace('\"','\''));
+		String totalString = "\'total\':" +  String.valueOf(list.size())
+				+ ",";
+		content = content.substring(0, 2) + totalString + content.substring(2);
+		ServletActionContext.getRequest().setAttribute("content",
+				content.replace('\"', '\''));
 		return SUCCESS;
 	}
 
@@ -46,6 +53,22 @@ public class QueryDataAction extends ActionSupport {
 
 	public void setSqlString(String sqlString) {
 		this.sqlString = sqlString;
+	}
+
+	public String getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(String pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public String getPage() {
+		return page;
+	}
+
+	public void setPage(String page) {
+		this.page = page;
 	}
 
 }
