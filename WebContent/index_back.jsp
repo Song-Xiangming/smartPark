@@ -63,7 +63,8 @@
 	</div>
 	<div id="dataContainer" style="display: none"></div>
 
-
+	<script type="text/javascript"
+	src="./js/tableNameMap.js"></script>
 	<script type="text/javascript">
 		// 所有的数据
 		var allObject = {};
@@ -112,6 +113,7 @@
 			});
 			var pg = $("#dg").datagrid("getPager");
 			$(pg).pagination({
+				showRefresh: false,
 				onSelectPage:function(pageNumber, pageSize){
 					page = pageNumber;
 					pageSize = pageSize;
@@ -127,7 +129,7 @@
 						Object.keys(allObject).forEach(function(elt, i, array) {
 							if (elt[2] === record.value[2]) {
 								data.push({
-									label : elt,
+									label : tableNameMap[elt.toUpperCase()].NAME,
 									value : elt
 								});
 							}
@@ -165,6 +167,7 @@
 						});
 						var pg = $("#dg").datagrid("getPager");
 						$(pg).pagination({
+							showRefresh: false,
 							onSelectPage:function(pageNumber, pageSize){
 								page = pageNumber;
 								pageSize = pageSize;

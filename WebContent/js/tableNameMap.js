@@ -1,318 +1,318 @@
 var tableNameMap = {
-    SEC_C_EI_ENTERPRISEINFO : {
+    SECCEIENTERPRISEINFO : {
         NO : 1,
         NAME : '企业基本信息表',
-        ENTERPRISE_ID : '企业标识'
+        ENTERPRISEID : '企业标识'
     },
-    SEC_C_EI_ENTERPRISEAUDIT : {
+    SECCEIENTERPRISEAUDIT : {
         NO : 2,
         NAME : '企业基本信息审核表'
     },
-    SEC_C_EI_DANGERINDUSTRY : {
+    SECCEIDANGERINDUSTRY : {
         NO : 3,
         NAME : '危险化学品企业行业信息'
     },
-    SEC_C_EI_FIREWORKSINDUSTRY : {
+    SECCEIFIREWORKSINDUSTRY : {
         NO : 4,
         NAME : '烟花爆竹企业行业信息'
     },
-    SEC_C_EI_CHEMICAL : {
+    SECCEICHEMICAL : {
         NO : 5,
         NAME : '企业化学品信息'
     },
-    SEC_C_EI_ACCIDENTS : {
+    SECCEIACCIDENTS : {
         NO : 6,
         NAME : '安全生产事故'
     },
-    SEC_C_EI_STAND : {
+    SECCEISTAND : {
         NO : 7,
         NAME : '企业标准化证书信息'
     },
-    SEC_C_EI_ADMILICEINFO : {
+    SECCEIADMILICEINFO : {
         NO : 8,
         NAME : '企业行政许可信息'
     },
-    SEC_C_EI_SECUCHECK : {
+    SECCEISECUCHECK : {
         NO : 9,
         NAME : '企业安全检查信息'
     },
-    SEC_C_ST_ENTSAFESCORE : {
+    SECCSTENTSAFESCORE : {
         NO : 10,
         NAME : '企业安评信息表'
     },
-    SEC_C_EI_DANGSRC : {
+    SECCEIDANGSRC : {
         NO : 11,
         NAME : '企业重大危险源信息'
     },
-    SEC_C_EI_KEYPLACE : {
+    SECCEIKEYPLACE : {
         NO : 12,
         NAME : '企业重点场所信息'
     },
-    LGT_ENTERPRISE_INFO : {
+    LGTENTERPRISEINFO : {
         NO : 1,
         NAME : '企业基本信息表'
     },
-    LGT_RESTRICTED_AREA_INFO : {
+    LGTRESTRICTEDAREAINFO : {
         NO : 2,
         NAME : '区域限制表'
     },
-    LGT_DANGEROUS_CAR_INFO : {
+    LGTDANGEROUSCARINFO : {
         NO : 4,
         NAME : '危险品车辆信息表'
     },
-    LGT_DAN_CAR_ATT_REL : {
+    LGTDANCARATTREL : {
         NO : 5,
         NAME : '危险品车辆附件关系'
     },
-    LGT_ALARM_TIMES : {
+    LGTALARMTIMES : {
         NO : 7,
         NAME : '报警次数信息表'
     },
-    LGT_ALARM_MANAGE : {
+    LGTALARMMANAGE : {
         NO : 8,
         NAME : '报警管理信息表'
     },
-    LGT_ALARM_THRESHOLD : {
+    LGTALARMTHRESHOLD : {
         NO : 9,
         NAME : '报警阈值信息表'
     },
-    LGT_EMERGENCY_INFO : {
+    LGTEMERGENCYINFO : {
         NO : 10,
         NAME : '突发信息表'
     },
-    LGT_GOODS_SOURCE_INFO : {
+    LGTGOODSSOURCEINFO : {
         NO : 13,
         NAME : '货源基本信息'
     },
-    LGT_GOODS_MANAGE_INFO : {
+    LGTGOODSMANAGEINFO : {
         NO : 14,
         NAME : '货源管理'
     },
-    LGT_WAYBILL_GOODS : {
+    LGTWAYBILLGOODS : {
         NO : 15,
         NAME : '货物信息表'
     },
-    LGT_WAYBILL_GOODS_TEMPLATE : {
+    LGTWAYBILLGOODSTEMPLATE : {
         NO : 16,
         NAME : '货物模板信息表'
     },
-    LGT_CAR_REAL_TIME_POSTION : {
+    LGTCARREALTIMEPOSTION : {
         NO : 18,
         NAME : '车辆实时位置表（运送运单车辆）'
     },
-    LGT_VEHICLE_SCHEDULING : {
+    LGTVEHICLESCHEDULING : {
         NO : 19,
         NAME : '车辆调度'
     },
-    LGT_WAYBILL_INFO : {
+    LGTWAYBILLINFO : {
         NO : 20,
         NAME : '运单信息表'
     },
-    LGT_BLACKLIST_INFO : {
+    LGTBLACKLISTINFO : {
         NO : 21,
         NAME : '黑名单信息表'
     },
-    ENERGY_MESSAGE_REL_ENT : {
+    ENERGYMESSAGERELENT : {
         NO : 1,
         NAME : '业务公式企业表'
     },
-    ENERGY_ENTERPRISE_POSITION : {
+    ENERGYENTERPRISEPOSITION : {
         NO : 2,
         NAME : '企业位置信息表'
     },
-    ENERGY_ENTERPRISE_INFO : {
+    ENERGYENTERPRISEINFO : {
         NO : 3,
         NAME : '企业信息表'
     },
-    ENERGY_ENTERPRISE_TARGET : {
+    ENERGYENTERPRISETARGET : {
         NO : 4,
         NAME : '企业用能指标表'
     },
-    ENERGY_ENT_YEAR_REPORT : {
+    ENERGYENTYEARREPORT : {
         NO : 5,
         NAME : '企业能源年报表'
     },
-    ENERGY_ENT_MONTH_REPORT : {
+    ENERGYENTMONTHREPORT : {
         NO :6,
         NAME : '企业能源月报表'
     },
-    ENERGY_CONSUMPTION_DATA_RED : {
+    ENERGYCONSUMPTIONDATARED : {
         NO : 7,
         NAME : '企业能源（能耗）实时数据'
     },
-    ENERGY_CONSUMPTION_RECORD : {
+    ENERGYCONSUMPTIONRECORD : {
         NO : 8,
         NAME : '企业能源（能耗）数据记录'
     },
-    ENERGY_RAW_COAL : {
+    ENERGYRAWCOAL : {
         NO : 11,
         NAME : '原煤表'
     },
-    ENERGY_GARDEN_TARGET : {
+    ENERGYGARDENTARGET : {
         NO : 12,
         NAME : '园区用能指标信息表'
     },
-    ENERGY_WATER_METER : {
+    ENERGYWATERMETER : {
         NO : 13,
         NAME : '水表'
     },
-    ENERGY_TRADE_INFO : {
+    ENERGYTRADEINFO : {
         NO : 14,
         NAME : '用能交易信息表'
     },
-    ENERGY_TRADE_FILE : {
+    ENERGYTRADEFILE : {
         NO : 15,
         NAME : '用能交易附件'
     },
-    ENERGY_USE_AUDIT : {
+    ENERGYUSEAUDIT : {
         NO : 16,
         NAME : '用能审计表'
     },
-    ENERGY_USE_AUDIT_RECORD : {
+    ENERGYUSEAUDITRECORD : {
         NO : 17,
         NAME : '用能审计记录表'
     },
-    ENERGY_TERMINAL : {
+    ENERGYTERMINAL : {
         NO : 22,
         NAME : '能源计量终端'
     },
-    ENERGY_COLLECT_SPOT : {
+    ENERGYCOLLECTSPOT : {
         NO : 23,
         NAME : '能源采集点'
     },
-    ENERGY_VAPOUR : {
+    ENERGYVAPOUR : {
         NO : 24,
         NAME : '蒸汽表'
     },
-    ENERGY_COLLECT_MACHINE : {
+    ENERGYCOLLECTMACHINE : {
         NO : 26,
         NAME : '采集器信息表'
     },
-    ENERGY_COLLECT_DATA : {
+    ENERGYCOLLECTDATA : {
         NO : 27,
         NAME : '采集点数据'
     },
-    ENV_CORE_ENTERPRISE_KIND : {
+    ENVCOREENTERPRISEKIND : {
         NO : 1,
         NAME : '企业种类'
     },
-    ENV_CORE_VALLEY : {
+    ENVCOREVALLEY : {
         NO : 2,
         NAME : '流域'
     },
-    ENV_CORE_AREAS : {
+    ENVCOREAREAS : {
         NO : 3,
         NAME : '地区'
     },
-    ENV_CORE_KEY_POINT_TYPE : {
+    ENVCOREKEYPOINTTYPE : {
         NO : 4,
         NAME : '重点类型'
     },
-    ENV_CORE_INDUSTRY_CATEGORY : {
+    ENVCOREINDUSTRYCATEGORY : {
         NO : 5,
         NAME : '行业类别'
     },
-    ENV_CORE_REGISTER_TYPE : {
+    ENVCOREREGISTERTYPE : {
         NO : 6,
         NAME : '注册类型'
     },
-    ENV_CORE_ENTERPRISE_SCALE : {
+    ENVCOREENTERPRISESCALE : {
         NO : 7,
         NAME : '企业规模'
     },
-    ENV_CORE_SUBORDINATION : {
+    ENVCORESUBORDINATION : {
         NO : 8,
         NAME : '隶属关系'
     },
-    ENV_CORE_ENTERPRISE_TYPE : {
+    ENVCOREENTERPRISETYPE : {
         NO : 9,
         NAME : '企业类别'
     },
-    ENV_CORE_ENTERPRISE_INFO : {
+    ENVCOREENTERPRISEINFO : {
         NO : 10,
         NAME : '企业信息'
     },
-    ENV_CORE_EMERGENCY_PLAN : {
+    ENVCOREEMERGENCYPLAN : {
         NO : 11,
         NAME : '应急预案'
     },
-    ENV_CORE_RADIATE_SAFETY_PERMIT : {
+    ENVCORERADIATESAFETYPERMIT : {
         NO : 12,
         NAME : '放射源信息-辐射安全许可信息'
     },
-    ENV_CORE_RADIOACTIVE_SOURCE : {
+    ENVCORERADIOACTIVESOURCE : {
         NO : 13,
         NAME : '放射源信息-放射源'
     },
-    ENV_CORE_RAY_DEVICE : {
+    ENVCORERAYDEVICE : {
         NO : 14,
         NAME : '放射源信息-射线装置'
     },
-    ENV_CORE_POLLUTANT_TYPE : {
+    ENVCOREPOLLUTANTTYPE : {
         NO : 15,
         NAME : '污染物类型'
     },
-    ENV_CORE_POLLUTANT : {
+    ENVCOREPOLLUTANT : {
         NO : 16,
         NAME : '污染物'
     },
-    ENV_CORE_POLLUTANT_UNIT : {
+    ENVCOREPOLLUTANTUNIT : {
         NO : 17,
         NAME : '污染物计量单位'
     },
-    ENV_CORE_POLL_STANDARD_LIMIT : {
+    ENVCOREPOLLSTANDARDLIMIT : {
         NO : 18,
         NAME : '污染物标准限值'
     },
-    ENV_CORE_VALLEY_FUNCTION_TYPE : {
+    ENVCOREVALLEYFUNCTIONTYPE : {
         NO : 19,
         NAME : '水功能区类别编码'
     },
-    ENV_CORE_GAS_FUNCTION_TYPE : {
+    ENVCOREGASFUNCTIONTYPE : {
         NO : 20,
         NAME : '气功能区类别编码'
     },
-    ENV_CORE_FUEL_TYPE : {
+    ENVCOREFUELTYPE : {
         NO : 21,
         NAME : '燃料类型'
     },
-    ENV_CORE_OUTLET_TYPE : {
+    ENVCOREOUTLETTYPE : {
         NO : 22,
         NAME : '排放口类型'
     },
-    ENV_CORE_SEWAGE_DISCHARGE : {
+    ENVCORESEWAGEDISCHARGE : {
         NO : 23,
         NAME : '排放去向'
     },
-    ENV_CORE_DISCHARGE_RULE : {
+    ENVCOREDISCHARGERULE : {
         NO : 24,
         NAME : '排放规则'
     },
-    ENV_CORE_CONTROL_ZONE : {
+    ENVCORECONTROLZONE : {
         NO : 25,
         NAME : '控制区'
     },
-    ENV_CORE_DISCHARGE_OUTLET_INFO : {
+    ENVCOREDISCHARGEOUTLETINFO : {
         NO : 26,
         NAME : '排放口登记信息库'
     },
-    ENV_CORE_LETOUT_STATE_CONTROL : {
+    ENVCORELETOUTSTATECONTROL : {
         NO : 27,
         NAME : '排放口国控名单记录表'
     },
-    ENV_CORE_ENT_POLLUTANT : {
+    ENVCOREENTPOLLUTANT : {
         NO : 28,
         NAME : '企业污染物'
     },
-    ENV_MONITOR_ALARM_REGIST_FORM : {
+    ENVMONITORALARMREGISTFORM : {
         NO : 29,
         NAME : '报警处置单登记表'
     },
-    ENV_MONITOR_ALARM_LOG : {
+    ENVMONITORALARMLOG : {
         NO : 30,
         NAME : '报警信息'
     },
-    ENV_MONITOR_GAS_ALARM_24HOURS : {
+    ENVMONITORGASALARM24HOURS : {
         NO : 31,
         NAME : '废气连续24小时超标记录表'
     },
