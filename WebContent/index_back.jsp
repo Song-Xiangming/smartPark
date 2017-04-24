@@ -8,19 +8,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<base href="<%=basePath%>">
-<title>智慧园区</title>
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css"
-	href="./easyui/themes/default/easyui.css">
-<link rel="stylesheet" type="text/css" href="./easyui/themes/icon.css">
-<script type="text/javascript" src="./easyui/jquery.min.js"></script>
-<script type="text/javascript" src="./easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript"
-	src="./easyui/locale/easyui-lang-zh_CN.js"></script>
+	<base href="<%=basePath%>">
+	<title>智慧园区</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		href="./easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="./easyui/themes/icon.css">
+	<script type="text/javascript" src="./easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="./easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript"
+		src="./easyui/locale/easyui-lang-zh_CN.js"></script>
 </head>
 <body>
 	<h1>智慧化工园区查询系统</h1>
@@ -63,23 +63,41 @@
 	</div>
 	<div id="dataContainer" style="display: none"></div>
 
-	<script type="text/javascript"
-	src="./js/tableNameMap.js"></script>
+	<script type="text/javascript" src="./js/tableNameMap.js"></script>
 	<script type="text/javascript">
 		// 所有的数据
 		var allObject = {};
 		// 现在的表名
 		var tableName = '';
+		// 当前页
 		var page = 1;
+		// 当前页面大小
 		var pageSize = 20;
+		// 是否可编辑
 		var canEdit = true;
 		// 首字母大写
 		String.prototype.firstUpperCase=function(){
 		    return this.replace(/^\S/,function(s){return s.toUpperCase();});
 		}
+		Date.prototype.Format = function (fmt) {
+		    var o = {
+		        "M+": this.getMonth() + 1, //月份
+		        "d+": this.getDate(), //日
+		        "h+": this.getHours(), //小时
+		        "m+": this.getMinutes(), //分
+		        "s+": this.getSeconds(), //秒
+		        "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+		        "S": this.getMilliseconds() //毫秒
+		    };
+		    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+		    for (var k in o)
+		    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+		    return fmt;
+		}
 		function query() {
 			var value = $('#selectTable').combobox('getValue');
 			if(!value) {
+				canEdit = true;
 				$.messager.alert('错误', '请选择表', 'error');
 				return;
 			}
@@ -101,8 +119,8 @@
 				}
 				data.forEach(function (element) {
 					Object.keys(element).forEach(function(elt, i, array) {
-						if (elt.indexOf('Time') !== -1) {
-							element[elt] = new Date(element[elt]);
+						if (elt.indexOf('Time') !== -1 || elt.indexOf('time') !== -1) {
+							element[elt] = new Date(element[elt]).Format("yyyy-MM-dd");
 						}
 					});
 				});
@@ -166,8 +184,15 @@
 							column.width = width;
 							column.field = elt;
 							column.title = elt;
-							column.editor = {
-								type : 'textbox',
+							if (elt.indexOf('Time') !== -1 || elt.indexOf('time') !== -1) {
+								column.editor = {
+									type : 'datebox',
+								}
+							}
+							else {
+								column.editor = {
+									type : 'textbox',
+								}
 							}
 							columns.push(column);
 						});
@@ -191,38 +216,7 @@
 				// 当前页,页面大小重置
 				page = 1;
 				pageSize = 10;
-				var value = $('#selectTable').combobox('getValue');
-				if(!value) {
-					$.messager.alert('错误', '请选择表', 'error');
-					return;
-				}
-				$('#dataContainer').load('query.action', {
-					sqlString:value.firstUpperCase(),
-					pageSize: pageSize,
-					page: page
-				}, function () {
-					// 真数据
-					var data = JSON.parse($('#Object').val().replace(/'/g, "\""));
-					// mook数据开始
-					// var mookData = "[{'total':10,'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''},{'coding':'','collectValue':0,'collectorId':'','createTime':1492412967185,'dataSequence':'','eid':'','remove':'','sampleTime':1492412967185,'spotId':'','subsystemId':'','terminalId':'','uploadType':''}]"
-					// var data = JSON.parse(mookData.replace(/'/g, "\""));
-					// mook数据结束
-					if (data.length === 0) {
-						$.messager.alert('错误', '获取数据失败', 'error');
-						return;
-					}
-					data.forEach(function (element) {
-						Object.keys(element).forEach(function(elt, i, array) {
-							if (elt.indexOf('Time') !== -1) {
-								element[elt] = new Date(element[elt]);
-							}
-						});
-					});
-					var tableData = {}
-					tableData.total = data[0].total;
-					tableData.rows = data;
-					$('#dg').datagrid('loadData', tableData); //将数据绑定到datagrid
-				});
+				query();
 			});
 			// 删除
 			$('#remove').bind('click', function() {
@@ -242,6 +236,7 @@
 					});
 					$('#dataContainer').load('deletedata.action',data, function() {
 						if ($('#result').text() === 'SUCCESS') {
+							$.messager.alert('成功', '删除成功', 'info');
 							query();
 						}
 						else {
@@ -292,11 +287,12 @@
 					});
 					$('#dataContainer').load('updatedata.action',data, function() {
 						if (!($('#result').text() === 'SUCCESS')) {
-							query();
+							$.messager.alert('成功', '编辑成功', 'info');
 						}
 						else {
 							$.messager.alert('失败', '编辑失败', 'error');
 						}
+						query();
 					});
 					editIndex = undefined;
 					return true;
@@ -317,9 +313,9 @@
 		});
 	</script>
 	<style type="text/css">
-h1 {
-	text-align: center;
-}
-</style>
+	h1 {
+		text-align: center;
+	}
+	</style>
 </body>
 </html>
