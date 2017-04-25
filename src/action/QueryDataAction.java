@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -23,37 +24,47 @@ public class QueryDataAction extends ActionSupport {
 	public String pageSize = "";
 	public String page = "";
 	public List<Object> list = new ArrayList<Object>();
+	public int totalNum = 0;
+	private CountDownLatch countDownLatch = new CountDownLatch(1);
+	private String className = "";
 
 	@Override
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
-		// list =
-		// BaseDAO.query("from EnergyCollectData energyCollectData",null);
+		className = sqlString;
 		String firstString = sqlString.substring(0, 1);
 		firstString = firstString.toLowerCase();
 		sqlString = "from " + sqlString + " " + firstString
 				+ sqlString.substring(1);
-		if(page.equals("")||pageSize.equals(""))
+//		int totalNum = BaseDAO.getCount(
+//				"select count(*) from EnergyCollectData", null);
+		new Thread(new queryTotalNum()).run();
+		if (page.equals("") || pageSize.equals(""))
 			list = BaseDAO.query(sqlString, null);
 		else
 			list = BaseDAO.queryByPage(sqlString, null, Integer.parseInt(page),
-				Integer.parseInt(pageSize));
+					Integer.parseInt(pageSize));
+		
+		countDownLatch.await();
+		
 		String content = JSONSerializer.serialize(list);
-		String totalString = "\'total\':" +  String.valueOf(list.size())
-				+ ",";
+		String totalString = "\'total\':" + String.valueOf(totalNum) + ",";
 		content = content.substring(0, 2) + totalString + content.substring(2);
 		ServletActionContext.getRequest().setAttribute("content",
 				content.replace('\"', '\''));
 		return SUCCESS;
 	}
-	
-	public String dealJson(String json){
-		String[] strings = json.split("},");
-		for(int i = 0;i<strings.length;i++){
-			
+
+	public class queryTotalNum implements Runnable {
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			totalNum = BaseDAO.getCount("select count(*) from " + className,
+					null);
+			countDownLatch.countDown();
 		}
-		return json;
-		
+
 	}
 
 	public String getSqlString() {

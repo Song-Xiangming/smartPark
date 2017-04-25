@@ -220,7 +220,7 @@ public class BaseDAO {
 	 * @return������ݸ���
 	 */
 	public static int getCount(String hql, String[] pras) {
-		int resu = 0;
+		long resu = 0;
 		Session s = null;
 		try {
 			s = HibernateUtil.getSession();
@@ -230,14 +230,15 @@ public class BaseDAO {
 					q.setString(i, pras[i]);
 				}
 			}
-			resu = Integer.valueOf(q.iterate().next().toString());
+			resu = (Long)q.iterate().next();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			if (s != null)
 				s.close();
 		}
-		return resu;
+		return (int)resu;
 	}
 
 }
