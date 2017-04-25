@@ -56,6 +56,47 @@ public class EnergyConsumptionDataRed implements java.io.Serializable {
 
 	/** default constructor */
 	public EnergyConsumptionDataRed() {
+		eid = "";
+		sampleTime = new Date();
+		subsystemId = "";
+		a0 = new BigDecimal(0);
+		b0 = new BigDecimal(0);
+		c0 = new BigDecimal(0);
+		d0 = new BigDecimal(0);
+		d1 = new BigDecimal(0);
+		d2 = new BigDecimal(0);
+		d3 = new BigDecimal(0);
+		e0 = new BigDecimal(0);
+		f0 = new BigDecimal(0);
+		g0 = new BigDecimal(0);
+		h0 = new BigDecimal(0);
+		i0 = new BigDecimal(0);
+		j0 = new BigDecimal(0);
+		k0 = new BigDecimal(0);
+		l0 = new BigDecimal(0);
+		m0 = new BigDecimal(0);
+		o0 = new BigDecimal(0);
+		p0 = new BigDecimal(0);
+		q0 = new BigDecimal(0);
+		r0 = new BigDecimal(0);
+		s0 = new BigDecimal(0);
+		t0 = new BigDecimal(0);
+		u0 = new BigDecimal(0);
+		v0 = new BigDecimal(0);
+		v1 = new BigDecimal(0);
+		v2 = new BigDecimal(0);
+		v3 = new BigDecimal(0);
+		v4 = new BigDecimal(0);
+		w0 = new BigDecimal(0);
+		remove = "";
+		n0 = new BigDecimal(0);
+		x0 = new BigDecimal(0);
+		x1 = new BigDecimal(0);
+		x2 = new BigDecimal(0);
+		x3 = new BigDecimal(0);
+		u1 = new BigDecimal(0);
+		dataOrigin = "";
+
 	}
 
 	/** full constructor */

@@ -3,40 +3,37 @@ package com.mdd.model;
 import java.util.Date;
 
 /**
- * EnergyCollectSpot entity. @author MyEclipse Persistence Tools
+ * EnergyTerminal entity. @author MyEclipse Persistence Tools
  */
 
-public class EnergyCollectSpot implements java.io.Serializable {
+public class EnergyTerminal implements java.io.Serializable {
 
 	// Fields
 
 	private String eid;
 	private String ename;
+	private String conn;
 	private Date createTime;
 	private String remove;
-	private String coding;
-	private String eerror;
 
 	// Constructors
 
 	/** default constructor */
-	public EnergyCollectSpot() {
-		eid = "";
-		ename = "";
-		createTime = new Date();
-		remove = "";
-		coding = "";
-		eerror = "";
+	public EnergyTerminal() {
+		eid="";
+		ename="";
+		conn="";
+		createTime=new Date();
+		remove="";
 	}
 
 	/** full constructor */
-	public EnergyCollectSpot(String ename, Date createTime, String remove,
-			String coding, String eerror) {
+	public EnergyTerminal(String ename, String conn, Date createTime,
+			String remove) {
 		this.ename = ename;
+		this.conn = conn;
 		this.createTime = createTime;
 		this.remove = remove;
-		this.coding = coding;
-		this.eerror = eerror;
 	}
 
 	// Property accessors
@@ -57,6 +54,14 @@ public class EnergyCollectSpot implements java.io.Serializable {
 		this.ename = ename;
 	}
 
+	public String getConn() {
+		return this.conn;
+	}
+
+	public void setConn(String conn) {
+		this.conn = conn;
+	}
+
 	public Date getCreateTime() {
 		return this.createTime;
 	}
@@ -71,22 +76,6 @@ public class EnergyCollectSpot implements java.io.Serializable {
 
 	public void setRemove(String remove) {
 		this.remove = remove;
-	}
-
-	public String getCoding() {
-		return this.coding;
-	}
-
-	public void setCoding(String coding) {
-		this.coding = coding;
-	}
-
-	public String getEerror() {
-		return this.eerror;
-	}
-
-	public void setEerror(String eerror) {
-		this.eerror = eerror;
 	}
 
 }
