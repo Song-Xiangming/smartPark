@@ -286,7 +286,7 @@
 							data[tableName + '.' + elt] = rowsData[editIndex][elt];
 					});
 					$('#dataContainer').load('updatedata.action',data, function() {
-						if (!($('#result').text() === 'SUCCESS')) {
+						if (($('#result').text() === 'SUCCESS')) {
 							$.messager.alert('成功', '编辑成功', 'info');
 						}
 						else {
