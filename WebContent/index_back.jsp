@@ -184,6 +184,7 @@
 							column.width = width;
 							column.field = elt;
 							column.title = elt;
+							column.align = 'center';
 							if (elt.indexOf('Time') !== -1 || elt.indexOf('time') !== -1) {
 								column.editor = {
 									type : 'datebox',
