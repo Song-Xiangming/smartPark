@@ -1,0 +1,58 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "easyui@git+http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+        "scope": null,
+        "escapedName": "easyui",
+        "name": "easyui",
+        "rawSpec": "git+http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+        "spec": "http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+        "type": "git"
+      },
+      "/Users/daiyanxu/Desktop/project/psp-web/fe-psp"
+    ]
+  ],
+  "_from": "git+http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+  "_id": "easyui@1.4.4",
+  "_inCache": true,
+  "_location": "/easyui",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "easyui@git+http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+    "scope": null,
+    "escapedName": "easyui",
+    "name": "easyui",
+    "rawSpec": "git+http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+    "spec": "http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+    "type": "git"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "git+http://gitlab.baidu.com/liubin29/jquery-easyui.git#e27fd91e1cd0e088573d476a52de4c01013ed36f",
+  "_shasum": "fed323909015bfb67db5f04448ea442d61829df4",
+  "_shrinkwrap": null,
+  "_spec": "easyui@git+http://gitlab.baidu.com/liubin29/jquery-easyui.git",
+  "_where": "/Users/daiyanxu/Desktop/project/psp-web/fe-psp",
+  "author": "",
+  "dependencies": {},
+  "description": "jQuery EasyUI framework helps you build your web pages easily.",
+  "devDependencies": {},
+  "gitHead": "e27fd91e1cd0e088573d476a52de4c01013ed36f",
+  "homepage": "http://jeasyui.com/",
+  "keywords": [
+    "jQuery",
+    "Easy",
+    "UI"
+  ],
+  "license": "GPL",
+  "main": "jquery.easyui.min.js",
+  "maintainers": [],
+  "name": "easyui",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {},
+  "scripts": {},
+  "version": "1.4.4"
+}

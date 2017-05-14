@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qvSFIDZzEee7VKszZYHQZQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_q_edQDZzEee7VKszZYHQZQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_q_kj4DZzEee7VKszZYHQZQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qvSsMDZzEee7VKszZYHQZQ" name="action">
+    <packagedElement xmi:type="uml:Class" xmi:id="_qvUhYDZzEee7VKszZYHQZQ" name="DeleteDataAction">
+      <generalization xmi:id="_qxx_gDZzEee7VKszZYHQZQ" general="_qxoOhTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_qytzoDZzEee7VKszZYHQZQ" name="energyAlarmInterval" visibility="public" type="_qyoUEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_qy4LsDZzEee7VKszZYHQZQ" name="energyCollectData" visibility="public" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_qzDx4DZzEee7VKszZYHQZQ" name="energyCollectMachine" visibility="public" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_qzPYEDZzEee7VKszZYHQZQ" name="energyCollectSpot" visibility="public" type="_qzJ4gDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_qznLgDZzEee7VKszZYHQZQ" name="energyConsumptionDataRed" visibility="public" type="_qzeBkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_qz11ADZzEee7VKszZYHQZQ" name="energyConsumptionRecord" visibility="public" type="_qzugQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q0CCQDZzEee7VKszZYHQZQ" name="energyEnterpriseInfo" visibility="public" type="_qz77oDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q0QEsDZzEee7VKszZYHQZQ" name="energyEnterprisePosition" visibility="public" type="_q0J-EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q0eHIDZzEee7VKszZYHQZQ" name="energyEnterpriseTarget" visibility="public" type="_q0XZcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q0vz8DZzEee7VKszZYHQZQ" name="energyEntMonthReport" visibility="public" type="_q0mC8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q1HAUDZzEee7VKszZYHQZQ" name="energyEntYearReport" visibility="public" type="_q07aIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q1gB4DZzEee7VKszZYHQZQ" name="energyGardenTarget" visibility="public" type="_q1W38DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q1zj4DZzEee7VKszZYHQZQ" name="energyMessageRelEnt" visibility="public" type="_q1rBADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q1_xIDZzEee7VKszZYHQZQ" name="energyMeterDevice" visibility="public" type="_q15qgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q2PBsDZzEee7VKszZYHQZQ" name="energyRawCoal" visibility="public" type="_q2F3wDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q2e5UDZzEee7VKszZYHQZQ" name="energyStaticData" visibility="public" type="_q2W9gDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q2rtoDZzEee7VKszZYHQZQ" name="energySynthesizeEnergyUse" visibility="public" type="_q2ncMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q2zpcDZzEee7VKszZYHQZQ" name="energyTerminal" visibility="public" type="_q2vYADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q28MUDZzEee7VKszZYHQZQ" name="energyTradeFile" visibility="public" type="_q23T0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3EvMDZzEee7VKszZYHQZQ" name="energyTradeInfo" visibility="public" type="_q3AdwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3MD8DZzEee7VKszZYHQZQ" name="energyUseAudit" visibility="public" type="_q3IZkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3T_wDZzEee7VKszZYHQZQ" name="energyUseAuditRecord" visibility="public" type="_q3QVYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3cioDZzEee7VKszZYHQZQ" name="energyUseEnergyEquipment" visibility="public" type="_q3YRMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3j3YDZzEee7VKszZYHQZQ" name="energyVapour" visibility="public" type="_q3g0EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3rMIDZzEee7VKszZYHQZQ" name="energyWaterMeter" visibility="public" type="_q3nhwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q3zvADZzEee7VKszZYHQZQ" name="eneSupEneUnitRelFile" visibility="public" type="_q3wEoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q36csDZzEee7VKszZYHQZQ" name="eneUseEneEquipmentFile" visibility="public" type="_q33ZYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4BKYDZzEee7VKszZYHQZQ" name="envCoreAreas" visibility="public" type="_q3-HEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4HRADZzEee7VKszZYHQZQ" name="envCoreControlZone" visibility="public" type="_q4ENsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4N-sDZzEee7VKszZYHQZQ" name="envCoreDischargeOutletInfo" visibility="public" type="_q4K7YDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4UsYDZzEee7VKszZYHQZQ" name="envCoreDischargeRule" visibility="public" type="_q4RpEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4dPQDZzEee7VKszZYHQZQ" name="envCoreEmergencyPlan" visibility="public" type="_q4Zk4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4jV4DZzEee7VKszZYHQZQ" name="envCoreEnterpriseInfo" visibility="public" type="_q4gSkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4qDkDZzEee7VKszZYHQZQ" name="envCoreEnterpriseKind" visibility="public" type="_q4nAQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q4ymcDZzEee7VKszZYHQZQ" name="envCoreEnterpriseScale" visibility="public" type="_q4tt8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q47wYDZzEee7VKszZYHQZQ" name="envCoreEnterpriseType" visibility="public" type="_q43e8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q5E6UDZzEee7VKszZYHQZQ" name="envCoreEntPollutant" visibility="public" type="_q5AB0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q5OrUDZzEee7VKszZYHQZQ" name="envCoreFuelType" visibility="public" type="_q5KZ4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q5VZADZzEee7VKszZYHQZQ" name="envCoreGasFunctionType" visibility="public" type="_q5SVsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q5bfoDZzEee7VKszZYHQZQ" name="envCoreIndustryCategory" visibility="public" type="_q5ZDYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q5iNUDZzEee7VKszZYHQZQ" name="envCoreKeyPointType" visibility="public" type="_q5fKADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q5vBoDZzEee7VKszZYHQZQ" name="envCoreLetoutStateControl" visibility="public" type="_q5qwMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q55ZsDZzEee7VKszZYHQZQ" name="envCoreOutletType" visibility="public" type="_q5z6IDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q6DxwDZzEee7VKszZYHQZQ" name="envCorePollStandardLimit" visibility="public" type="_q59rIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q6OJ0DZzEee7VKszZYHQZQ" name="envCorePollutant" visibility="public" type="_q6JRUDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q6ZI8DZzEee7VKszZYHQZQ" name="envCorePollutantType" visibility="public" type="_q6TpYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q6iS4DZzEee7VKszZYHQZQ" name="envCorePollutantUnit" visibility="public" type="_q6eogDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q6pnoDZzEee7VKszZYHQZQ" name="envCoreRadiateSafetyPermit" visibility="public" type="_q6lWMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q6z_sDZzEee7VKszZYHQZQ" name="envCoreRadioactiveSource" visibility="public" type="_q6vuQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q677gDZzEee7VKszZYHQZQ" name="envCoreRayDevice" visibility="public" type="_q63qEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7DQQDZzEee7VKszZYHQZQ" name="envCoreRegisterType" visibility="public" type="_q6_l4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7LMEDZzEee7VKszZYHQZQ" name="envCoreSewageDischarge" visibility="public" type="_q7HhsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7Sg0DZzEee7VKszZYHQZQ" name="envCoreSubordination" visibility="public" type="_q7PdgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7ZOgDZzEee7VKszZYHQZQ" name="envCoreValley" visibility="public" type="_q7WLMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7gjQDZzEee7VKszZYHQZQ" name="envCoreValleyFunctionType" visibility="public" type="_q7df8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7n4ADZzEee7VKszZYHQZQ" name="envMonitorAlarmLog" visibility="public" type="_q7k0sDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q7vMwDZzEee7VKszZYHQZQ" name="envMonitorAlarmRegistForm" visibility="public" type="_q7q7UDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q71TYDZzEee7VKszZYHQZQ" name="envMonitorGasAlarm24hours" visibility="public" type="_q7yQEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q78BEDZzEee7VKszZYHQZQ" name="lgtAlarmManage" visibility="public" type="_q749wDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8CuwDZzEee7VKszZYHQZQ" name="lgtAlarmThreshold" visibility="public" type="_q7_EYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8IOUDZzEee7VKszZYHQZQ" name="lgtAlarmTimes" visibility="public" type="_q8FyEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8OU8DZzEee7VKszZYHQZQ" name="lgtBlacklistManage" visibility="public" type="_q8LRoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8VCoDZzEee7VKszZYHQZQ" name="lgtCarDispatch" visibility="public" type="_q8RYQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8bJQDZzEee7VKszZYHQZQ" name="lgtCarRealTimePostion" visibility="public" type="_q8YF8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8go0DZzEee7VKszZYHQZQ" name="lgtDanCarAttRel" visibility="public" type="_q8eMkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8nWgDZzEee7VKszZYHQZQ" name="lgtDangerousCarInfo" visibility="public" type="_q8kTMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8tdIDZzEee7VKszZYHQZQ" name="lgtEmergencyInfo" visibility="public" type="_q8qZ0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q8zjwDZzEee7VKszZYHQZQ" name="lgtEnterprise" visibility="public" type="_q8xHgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q86RcDZzEee7VKszZYHQZQ" name="lgtKaOpen" visibility="public" type="_q83OIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9BmMDZzEee7VKszZYHQZQ" name="lgtParkArea" visibility="public" type="_q89UwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9KwIDZzEee7VKszZYHQZQ" name="lgtRestrictedAreaInfo" visibility="public" type="_q9GesDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9QPsDZzEee7VKszZYHQZQ" name="lgtSolveRoute" visibility="public" type="_q9NzcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9WWUDZzEee7VKszZYHQZQ" name="lgtSourceGoods" visibility="public" type="_q9TTADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9eSIDZzEee7VKszZYHQZQ" name="lgtSourceGoodsInfo" visibility="public" type="_q9aAsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9ncEDZzEee7VKszZYHQZQ" name="lgtWaybillGoods" visibility="public" type="_q9ijkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q9v-8DZzEee7VKszZYHQZQ" name="lgtWaybillGoodsTemplate" visibility="public" type="_q9sUkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q92soDZzEee7VKszZYHQZQ" name="lgtWaybillInfo" visibility="public" type="_q9zpUDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q98zQDZzEee7VKszZYHQZQ" name="secCEiAccidents" visibility="public" type="_q95v8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-C54DZzEee7VKszZYHQZQ" name="secCEiAdmiliceinfo" visibility="public" type="_q9_2kDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-NR8DZzEee7VKszZYHQZQ" name="secCEiChemical" visibility="public" type="_q-K1sDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-TYkDZzEee7VKszZYHQZQ" name="secCEiDangerindustry" visibility="public" type="_q-QVQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-aGQDZzEee7VKszZYHQZQ" name="secCEiDangsrc" visibility="public" type="_q-Wb4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-gM4DZzEee7VKszZYHQZQ" name="secCEiEnterpriseaudit" visibility="public" type="_q-dwoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-mTgDZzEee7VKszZYHQZQ" name="secCEiEnterpriseinfo" visibility="public" type="_q-j3QDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-saIDZzEee7VKszZYHQZQ" name="secCEiFireworksindustry" visibility="public" type="_q-pW0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-1kEDZzEee7VKszZYHQZQ" name="secCEiKeyplace" visibility="public" type="_q-wEgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q-9f4DZzEee7VKszZYHQZQ" name="secCEiSecucheck" visibility="public" type="_q-6ckDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q_DmgDZzEee7VKszZYHQZQ" name="secCEiStand" visibility="public" type="_q_AjMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q_JtIDZzEee7VKszZYHQZQ" name="secCStEntsafescore" visibility="public" type="_q_HQ4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q_PzwDZzEee7VKszZYHQZQ" name="energySupplyEnergyUnitData" visibility="public" type="_q_MwcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q_VTUDZzEee7VKszZYHQZQ" name="lgtPipeLocation" visibility="public" type="_q_S3EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q_bZ8DZzEee7VKszZYHQZQ" name="lgtPipeManage" visibility="public" type="_q_YWoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_q_hgkDZzEee7VKszZYHQZQ" name="targetString" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_q_hgkTZzEee7VKszZYHQZQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_q_lK8DZzEee7VKszZYHQZQ" name="execute" visibility="public">
+        <ownedParameter xmi:id="_q_lK8TZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_nnMDZzEee7VKszZYHQZQ" name="getEnergyAlarmInterval" visibility="public">
+        <ownedParameter xmi:id="_q_nnMTZzEee7VKszZYHQZQ" name="return" type="_qyoUEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_qqgDZzEee7VKszZYHQZQ" name="setEnergyAlarmInterval" visibility="public">
+        <ownedParameter xmi:id="_q_qqgTZzEee7VKszZYHQZQ" name="energyAlarmInterval" type="_qyoUEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_tt0DZzEee7VKszZYHQZQ" name="getEnergyCollectData" visibility="public">
+        <ownedParameter xmi:id="_q_tt0TZzEee7VKszZYHQZQ" name="return" type="_qxqDsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_xYMDZzEee7VKszZYHQZQ" name="setEnergyCollectData" visibility="public">
+        <ownedParameter xmi:id="_q_xYMTZzEee7VKszZYHQZQ" name="energyCollectData" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_0bgDZzEee7VKszZYHQZQ" name="getEnergyCollectMachine" visibility="public">
+        <ownedParameter xmi:id="_q_0bgTZzEee7VKszZYHQZQ" name="return" type="_qxqDsTZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_4F4DZzEee7VKszZYHQZQ" name="setEnergyCollectMachine" visibility="public">
+        <ownedParameter xmi:id="_q_4F4TZzEee7VKszZYHQZQ" name="energyCollectMachine" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_7JMDZzEee7VKszZYHQZQ" name="getEnergyCollectSpot" visibility="public">
+        <ownedParameter xmi:id="_q_7JMTZzEee7VKszZYHQZQ" name="return" type="_qzJ4gDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q_-MgDZzEee7VKszZYHQZQ" name="setEnergyCollectSpot" visibility="public">
+        <ownedParameter xmi:id="_q_-MgTZzEee7VKszZYHQZQ" name="energyCollectSpot" type="_qzJ4gDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rABP0DZzEee7VKszZYHQZQ" name="getEnergyConsumptionDataRed" visibility="public">
+        <ownedParameter xmi:id="_rABP0TZzEee7VKszZYHQZQ" name="return" type="_qzeBkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAE6MDZzEee7VKszZYHQZQ" name="setEnergyConsumptionDataRed" visibility="public">
+        <ownedParameter xmi:id="_rAE6MTZzEee7VKszZYHQZQ" name="energyConsumptionDataRed" type="_qzeBkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAH9gDZzEee7VKszZYHQZQ" name="getEnergyConsumptionRecord" visibility="public">
+        <ownedParameter xmi:id="_rAH9gTZzEee7VKszZYHQZQ" name="return" type="_qzugQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAKZwDZzEee7VKszZYHQZQ" name="setEnergyConsumptionRecord" visibility="public">
+        <ownedParameter xmi:id="_rAKZwTZzEee7VKszZYHQZQ" name="energyConsumptionRecord" type="_qzugQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAOEIDZzEee7VKszZYHQZQ" name="getEnergyEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_rAOEITZzEee7VKszZYHQZQ" name="return" type="_qz77oDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rARHcDZzEee7VKszZYHQZQ" name="setEnergyEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_rARHcTZzEee7VKszZYHQZQ" name="energyEnterpriseInfo" type="_qz77oDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAUKwDZzEee7VKszZYHQZQ" name="getEnergyEnterprisePosition" visibility="public">
+        <ownedParameter xmi:id="_rAUKwTZzEee7VKszZYHQZQ" name="return" type="_q0J-EDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAXOEDZzEee7VKszZYHQZQ" name="setEnergyEnterprisePosition" visibility="public">
+        <ownedParameter xmi:id="_rAXOETZzEee7VKszZYHQZQ" name="energyEnterprisePosition" type="_q0J-EDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAaRYDZzEee7VKszZYHQZQ" name="getEnergyEnterpriseTarget" visibility="public">
+        <ownedParameter xmi:id="_rAaRYTZzEee7VKszZYHQZQ" name="return" type="_q0XZcDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAdUsDZzEee7VKszZYHQZQ" name="setEnergyEnterpriseTarget" visibility="public">
+        <ownedParameter xmi:id="_rAd7wDZzEee7VKszZYHQZQ" name="energyEnterpriseTarget" type="_q0XZcDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAg_EDZzEee7VKszZYHQZQ" name="getEnergyEntMonthReport" visibility="public">
+        <ownedParameter xmi:id="_rAg_ETZzEee7VKszZYHQZQ" name="return" type="_q0mC8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAkCYDZzEee7VKszZYHQZQ" name="setEnergyEntMonthReport" visibility="public">
+        <ownedParameter xmi:id="_rAkCYTZzEee7VKszZYHQZQ" name="energyEntMonthReport" type="_q0mC8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAnFsDZzEee7VKszZYHQZQ" name="getEnergyEntYearReport" visibility="public">
+        <ownedParameter xmi:id="_rAnFsTZzEee7VKszZYHQZQ" name="return" type="_q07aIDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAqJADZzEee7VKszZYHQZQ" name="setEnergyEntYearReport" visibility="public">
+        <ownedParameter xmi:id="_rAqJATZzEee7VKszZYHQZQ" name="energyEntYearReport" type="_q07aIDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAtzYDZzEee7VKszZYHQZQ" name="getEnergyGardenTarget" visibility="public">
+        <ownedParameter xmi:id="_rAtzYTZzEee7VKszZYHQZQ" name="return" type="_q1W38DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAw2sDZzEee7VKszZYHQZQ" name="setEnergyGardenTarget" visibility="public">
+        <ownedParameter xmi:id="_rAw2sTZzEee7VKszZYHQZQ" name="energyGardenTarget" type="_q1W38DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rAz6ADZzEee7VKszZYHQZQ" name="getEnergyMessageRelEnt" visibility="public">
+        <ownedParameter xmi:id="_rAz6ATZzEee7VKszZYHQZQ" name="return" type="_q1rBADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rA29UDZzEee7VKszZYHQZQ" name="setEnergyMessageRelEnt" visibility="public">
+        <ownedParameter xmi:id="_rA29UTZzEee7VKszZYHQZQ" name="energyMessageRelEnt" type="_q1rBADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rA6AoDZzEee7VKszZYHQZQ" name="getEnergyMeterDevice" visibility="public">
+        <ownedParameter xmi:id="_rA6AoTZzEee7VKszZYHQZQ" name="return" type="_q15qgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rA9rADZzEee7VKszZYHQZQ" name="setEnergyMeterDevice" visibility="public">
+        <ownedParameter xmi:id="_rA9rATZzEee7VKszZYHQZQ" name="energyMeterDevice" type="_q15qgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBAuUDZzEee7VKszZYHQZQ" name="getEnergyRawCoal" visibility="public">
+        <ownedParameter xmi:id="_rBAuUTZzEee7VKszZYHQZQ" name="return" type="_q2F3wDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBEYsDZzEee7VKszZYHQZQ" name="setEnergyRawCoal" visibility="public">
+        <ownedParameter xmi:id="_rBEYsTZzEee7VKszZYHQZQ" name="energyRawCoal" type="_q2F3wDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBHcADZzEee7VKszZYHQZQ" name="getEnergyStaticData" visibility="public">
+        <ownedParameter xmi:id="_rBHcATZzEee7VKszZYHQZQ" name="return" type="_q2W9gDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBKfUDZzEee7VKszZYHQZQ" name="setEnergyStaticData" visibility="public">
+        <ownedParameter xmi:id="_rBKfUTZzEee7VKszZYHQZQ" name="energyStaticData" type="_q2W9gDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBNioDZzEee7VKszZYHQZQ" name="getEnergySynthesizeEnergyUse" visibility="public">
+        <ownedParameter xmi:id="_rBNioTZzEee7VKszZYHQZQ" name="return" type="_q2ncMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBRNADZzEee7VKszZYHQZQ" name="setEnergySynthesizeEnergyUse" visibility="public">
+        <ownedParameter xmi:id="_rBRNATZzEee7VKszZYHQZQ" name="energySynthesizeEnergyUse" type="_q2ncMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBUQUDZzEee7VKszZYHQZQ" name="getEnergyTerminal" visibility="public">
+        <ownedParameter xmi:id="_rBUQUTZzEee7VKszZYHQZQ" name="return" type="_q2vYADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBXToDZzEee7VKszZYHQZQ" name="setEnergyTerminal" visibility="public">
+        <ownedParameter xmi:id="_rBXToTZzEee7VKszZYHQZQ" name="energyTerminal" type="_q2vYADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBa-ADZzEee7VKszZYHQZQ" name="getEnergyTradeFile" visibility="public">
+        <ownedParameter xmi:id="_rBa-ATZzEee7VKszZYHQZQ" name="return" type="_q23T0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBfPcDZzEee7VKszZYHQZQ" name="setEnergyTradeFile" visibility="public">
+        <ownedParameter xmi:id="_rBfPcTZzEee7VKszZYHQZQ" name="energyTradeFile" type="_q23T0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBiSwDZzEee7VKszZYHQZQ" name="getEnergyTradeInfo" visibility="public">
+        <ownedParameter xmi:id="_rBiSwTZzEee7VKszZYHQZQ" name="return" type="_q3AdwDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBlWEDZzEee7VKszZYHQZQ" name="setEnergyTradeInfo" visibility="public">
+        <ownedParameter xmi:id="_rBlWETZzEee7VKszZYHQZQ" name="energyTradeInfo" type="_q3AdwDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBpAcDZzEee7VKszZYHQZQ" name="getEnergyUseAudit" visibility="public">
+        <ownedParameter xmi:id="_rBpAcTZzEee7VKszZYHQZQ" name="return" type="_q3IZkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBsDwDZzEee7VKszZYHQZQ" name="setEnergyUseAudit" visibility="public">
+        <ownedParameter xmi:id="_rBsDwTZzEee7VKszZYHQZQ" name="energyUseAudit" type="_q3IZkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rBvHEDZzEee7VKszZYHQZQ" name="getEnergyUseAuditRecord" visibility="public">
+        <ownedParameter xmi:id="_rBvHETZzEee7VKszZYHQZQ" name="return" type="_q3QVYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rByxcDZzEee7VKszZYHQZQ" name="setEnergyUseAuditRecord" visibility="public">
+        <ownedParameter xmi:id="_rByxcTZzEee7VKszZYHQZQ" name="energyUseAuditRecord" type="_q3QVYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rB9JgDZzEee7VKszZYHQZQ" name="getEnergyUseEnergyEquipment" visibility="public">
+        <ownedParameter xmi:id="_rB9JgTZzEee7VKszZYHQZQ" name="return" type="_q3YRMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCAM0DZzEee7VKszZYHQZQ" name="setEnergyUseEnergyEquipment" visibility="public">
+        <ownedParameter xmi:id="_rCAM0TZzEee7VKszZYHQZQ" name="energyUseEnergyEquipment" type="_q3YRMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCDQIDZzEee7VKszZYHQZQ" name="getEnergyVapour" visibility="public">
+        <ownedParameter xmi:id="_rCDQITZzEee7VKszZYHQZQ" name="return" type="_q3g0EDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCGTcDZzEee7VKszZYHQZQ" name="setEnergyVapour" visibility="public">
+        <ownedParameter xmi:id="_rCGTcTZzEee7VKszZYHQZQ" name="energyVapour" type="_q3g0EDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCJWwDZzEee7VKszZYHQZQ" name="getEnergyWaterMeter" visibility="public">
+        <ownedParameter xmi:id="_rCJWwTZzEee7VKszZYHQZQ" name="return" type="_q3nhwDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCMaEDZzEee7VKszZYHQZQ" name="setEnergyWaterMeter" visibility="public">
+        <ownedParameter xmi:id="_rCNBIDZzEee7VKszZYHQZQ" name="energyWaterMeter" type="_q3nhwDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCQEcDZzEee7VKszZYHQZQ" name="getEneSupEneUnitRelFile" visibility="public">
+        <ownedParameter xmi:id="_rCQEcTZzEee7VKszZYHQZQ" name="return" type="_q3wEoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCTu0DZzEee7VKszZYHQZQ" name="setEneSupEneUnitRelFile" visibility="public">
+        <ownedParameter xmi:id="_rCTu0TZzEee7VKszZYHQZQ" name="eneSupEneUnitRelFile" type="_q3wEoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCWyIDZzEee7VKszZYHQZQ" name="getEneUseEneEquipmentFile" visibility="public">
+        <ownedParameter xmi:id="_rCWyITZzEee7VKszZYHQZQ" name="return" type="_q33ZYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCacgDZzEee7VKszZYHQZQ" name="setEneUseEneEquipmentFile" visibility="public">
+        <ownedParameter xmi:id="_rCacgTZzEee7VKszZYHQZQ" name="eneUseEneEquipmentFile" type="_q33ZYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCdf0DZzEee7VKszZYHQZQ" name="getEnvCoreAreas" visibility="public">
+        <ownedParameter xmi:id="_rCdf0TZzEee7VKszZYHQZQ" name="return" type="_q3-HEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rChKMDZzEee7VKszZYHQZQ" name="setEnvCoreAreas" visibility="public">
+        <ownedParameter xmi:id="_rChKMTZzEee7VKszZYHQZQ" name="envCoreAreas" type="_q3-HEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rClboDZzEee7VKszZYHQZQ" name="getEnvCoreControlZone" visibility="public">
+        <ownedParameter xmi:id="_rClboTZzEee7VKszZYHQZQ" name="return" type="_q4ENsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCptEDZzEee7VKszZYHQZQ" name="setEnvCoreControlZone" visibility="public">
+        <ownedParameter xmi:id="_rCptETZzEee7VKszZYHQZQ" name="envCoreControlZone" type="_q4ENsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCswYDZzEee7VKszZYHQZQ" name="getEnvCoreDischargeOutletInfo" visibility="public">
+        <ownedParameter xmi:id="_rCswYTZzEee7VKszZYHQZQ" name="return" type="_q4K7YDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCxB0DZzEee7VKszZYHQZQ" name="setEnvCoreDischargeOutletInfo" visibility="public">
+        <ownedParameter xmi:id="_rCxB0TZzEee7VKszZYHQZQ" name="envCoreDischargeOutletInfo" type="_q4K7YDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rCzeEDZzEee7VKszZYHQZQ" name="getEnvCoreDischargeRule" visibility="public">
+        <ownedParameter xmi:id="_rCzeETZzEee7VKszZYHQZQ" name="return" type="_q4RpEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rC3IcDZzEee7VKszZYHQZQ" name="setEnvCoreDischargeRule" visibility="public">
+        <ownedParameter xmi:id="_rC3IcTZzEee7VKszZYHQZQ" name="envCoreDischargeRule" type="_q4RpEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rC6LwDZzEee7VKszZYHQZQ" name="getEnvCoreEmergencyPlan" visibility="public">
+        <ownedParameter xmi:id="_rC6LwTZzEee7VKszZYHQZQ" name="return" type="_q4Zk4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rC9PEDZzEee7VKszZYHQZQ" name="setEnvCoreEmergencyPlan" visibility="public">
+        <ownedParameter xmi:id="_rC9PETZzEee7VKszZYHQZQ" name="envCoreEmergencyPlan" type="_q4Zk4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDASYDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_rDASYTZzEee7VKszZYHQZQ" name="return" type="_q4gSkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDD8wDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_rDD8wTZzEee7VKszZYHQZQ" name="envCoreEnterpriseInfo" type="_q4gSkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDHAEDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseKind" visibility="public">
+        <ownedParameter xmi:id="_rDHAETZzEee7VKszZYHQZQ" name="return" type="_q4nAQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDKqcDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseKind" visibility="public">
+        <ownedParameter xmi:id="_rDKqcTZzEee7VKszZYHQZQ" name="envCoreEnterpriseKind" type="_q4nAQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDNtwDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseScale" visibility="public">
+        <ownedParameter xmi:id="_rDNtwTZzEee7VKszZYHQZQ" name="return" type="_q4tt8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDRYIDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseScale" visibility="public">
+        <ownedParameter xmi:id="_rDRYITZzEee7VKszZYHQZQ" name="envCoreEnterpriseScale" type="_q4tt8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDW3sDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseType" visibility="public">
+        <ownedParameter xmi:id="_rDW3sTZzEee7VKszZYHQZQ" name="return" type="_q43e8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDbJIDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseType" visibility="public">
+        <ownedParameter xmi:id="_rDbJITZzEee7VKszZYHQZQ" name="envCoreEnterpriseType" type="_q43e8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDfakDZzEee7VKszZYHQZQ" name="getEnvCoreEntPollutant" visibility="public">
+        <ownedParameter xmi:id="_rDfakTZzEee7VKszZYHQZQ" name="return" type="_q5AB0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDjsADZzEee7VKszZYHQZQ" name="setEnvCoreEntPollutant" visibility="public">
+        <ownedParameter xmi:id="_rDjsATZzEee7VKszZYHQZQ" name="envCoreEntPollutant" type="_q5AB0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDn9cDZzEee7VKszZYHQZQ" name="getEnvCoreFuelType" visibility="public">
+        <ownedParameter xmi:id="_rDn9cTZzEee7VKszZYHQZQ" name="return" type="_q5KZ4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDrAwDZzEee7VKszZYHQZQ" name="setEnvCoreFuelType" visibility="public">
+        <ownedParameter xmi:id="_rDrAwTZzEee7VKszZYHQZQ" name="envCoreFuelType" type="_q5KZ4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDuEEDZzEee7VKszZYHQZQ" name="getEnvCoreGasFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rDuEETZzEee7VKszZYHQZQ" name="return" type="_q5SVsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rDxucDZzEee7VKszZYHQZQ" name="setEnvCoreGasFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rDxucTZzEee7VKszZYHQZQ" name="envCoreGasFunctionType" type="_q5SVsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rD0xwDZzEee7VKszZYHQZQ" name="getEnvCoreIndustryCategory" visibility="public">
+        <ownedParameter xmi:id="_rD0xwTZzEee7VKszZYHQZQ" name="return" type="_q5ZDYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rD4cIDZzEee7VKszZYHQZQ" name="setEnvCoreIndustryCategory" visibility="public">
+        <ownedParameter xmi:id="_rD4cITZzEee7VKszZYHQZQ" name="envCoreIndustryCategory" type="_q5ZDYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rD7fcDZzEee7VKszZYHQZQ" name="getEnvCoreKeyPointType" visibility="public">
+        <ownedParameter xmi:id="_rD7fcTZzEee7VKszZYHQZQ" name="return" type="_q5fKADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rD_J0DZzEee7VKszZYHQZQ" name="setEnvCoreKeyPointType" visibility="public">
+        <ownedParameter xmi:id="_rD_J0TZzEee7VKszZYHQZQ" name="envCoreKeyPointType" type="_q5fKADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rECNIDZzEee7VKszZYHQZQ" name="getEnvCoreLetoutStateControl" visibility="public">
+        <ownedParameter xmi:id="_rECNITZzEee7VKszZYHQZQ" name="return" type="_q5qwMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEF3gDZzEee7VKszZYHQZQ" name="setEnvCoreLetoutStateControl" visibility="public">
+        <ownedParameter xmi:id="_rEF3gTZzEee7VKszZYHQZQ" name="envCoreLetoutStateControl" type="_q5qwMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEI60DZzEee7VKszZYHQZQ" name="getEnvCoreOutletType" visibility="public">
+        <ownedParameter xmi:id="_rEI60TZzEee7VKszZYHQZQ" name="return" type="_q5z6IDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rENMQDZzEee7VKszZYHQZQ" name="setEnvCoreOutletType" visibility="public">
+        <ownedParameter xmi:id="_rENMQTZzEee7VKszZYHQZQ" name="envCoreOutletType" type="_q5z6IDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEQPkDZzEee7VKszZYHQZQ" name="getEnvCorePollStandardLimit" visibility="public">
+        <ownedParameter xmi:id="_rEQPkTZzEee7VKszZYHQZQ" name="return" type="_q59rIDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rETS4DZzEee7VKszZYHQZQ" name="setEnvCorePollStandardLimit" visibility="public">
+        <ownedParameter xmi:id="_rETS4TZzEee7VKszZYHQZQ" name="envCorePollStandardLimit" type="_q59rIDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEXkUDZzEee7VKszZYHQZQ" name="getEnvCorePollutant" visibility="public">
+        <ownedParameter xmi:id="_rEXkUTZzEee7VKszZYHQZQ" name="return" type="_q6JRUDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEbOsDZzEee7VKszZYHQZQ" name="setEnvCorePollutant" visibility="public">
+        <ownedParameter xmi:id="_rEbOsTZzEee7VKszZYHQZQ" name="envCorePollutant" type="_q6JRUDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEeSADZzEee7VKszZYHQZQ" name="getEnvCorePollutantType" visibility="public">
+        <ownedParameter xmi:id="_rEeSATZzEee7VKszZYHQZQ" name="return" type="_q6TpYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEh8YDZzEee7VKszZYHQZQ" name="setEnvCorePollutantType" visibility="public">
+        <ownedParameter xmi:id="_rEh8YTZzEee7VKszZYHQZQ" name="envCorePollutantType" type="_q6TpYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEk_sDZzEee7VKszZYHQZQ" name="getEnvCorePollutantUnit" visibility="public">
+        <ownedParameter xmi:id="_rEk_sTZzEee7VKszZYHQZQ" name="return" type="_q6eogDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEoqEDZzEee7VKszZYHQZQ" name="setEnvCorePollutantUnit" visibility="public">
+        <ownedParameter xmi:id="_rEoqETZzEee7VKszZYHQZQ" name="envCorePollutantUnit" type="_q6eogDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rErtYDZzEee7VKszZYHQZQ" name="getEnvCoreRadiateSafetyPermit" visibility="public">
+        <ownedParameter xmi:id="_rEsUcDZzEee7VKszZYHQZQ" name="return" type="_q6lWMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEvXwDZzEee7VKszZYHQZQ" name="setEnvCoreRadiateSafetyPermit" visibility="public">
+        <ownedParameter xmi:id="_rEvXwTZzEee7VKszZYHQZQ" name="envCoreRadiateSafetyPermit" type="_q6lWMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rEzCIDZzEee7VKszZYHQZQ" name="getEnvCoreRadioactiveSource" visibility="public">
+        <ownedParameter xmi:id="_rEzCITZzEee7VKszZYHQZQ" name="return" type="_q6vuQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rE2sgDZzEee7VKszZYHQZQ" name="setEnvCoreRadioactiveSource" visibility="public">
+        <ownedParameter xmi:id="_rE2sgTZzEee7VKszZYHQZQ" name="envCoreRadioactiveSource" type="_q6vuQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rE5v0DZzEee7VKszZYHQZQ" name="getEnvCoreRayDevice" visibility="public">
+        <ownedParameter xmi:id="_rE5v0TZzEee7VKszZYHQZQ" name="return" type="_q63qEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rE9aMDZzEee7VKszZYHQZQ" name="setEnvCoreRayDevice" visibility="public">
+        <ownedParameter xmi:id="_rE9aMTZzEee7VKszZYHQZQ" name="envCoreRayDevice" type="_q63qEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFAdgDZzEee7VKszZYHQZQ" name="getEnvCoreRegisterType" visibility="public">
+        <ownedParameter xmi:id="_rFAdgTZzEee7VKszZYHQZQ" name="return" type="_q6_l4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFEH4DZzEee7VKszZYHQZQ" name="setEnvCoreRegisterType" visibility="public">
+        <ownedParameter xmi:id="_rFEH4TZzEee7VKszZYHQZQ" name="envCoreRegisterType" type="_q6_l4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFJAYDZzEee7VKszZYHQZQ" name="getEnvCoreSewageDischarge" visibility="public">
+        <ownedParameter xmi:id="_rFJAYTZzEee7VKszZYHQZQ" name="return" type="_q7HhsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFMqwDZzEee7VKszZYHQZQ" name="setEnvCoreSewageDischarge" visibility="public">
+        <ownedParameter xmi:id="_rFMqwTZzEee7VKszZYHQZQ" name="envCoreSewageDischarge" type="_q7HhsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFQVIDZzEee7VKszZYHQZQ" name="getEnvCoreSubordination" visibility="public">
+        <ownedParameter xmi:id="_rFQVITZzEee7VKszZYHQZQ" name="return" type="_q7PdgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFUmkDZzEee7VKszZYHQZQ" name="setEnvCoreSubordination" visibility="public">
+        <ownedParameter xmi:id="_rFUmkTZzEee7VKszZYHQZQ" name="envCoreSubordination" type="_q7PdgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFXp4DZzEee7VKszZYHQZQ" name="getEnvCoreValley" visibility="public">
+        <ownedParameter xmi:id="_rFXp4TZzEee7VKszZYHQZQ" name="return" type="_q7WLMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFb7UDZzEee7VKszZYHQZQ" name="setEnvCoreValley" visibility="public">
+        <ownedParameter xmi:id="_rFb7UTZzEee7VKszZYHQZQ" name="envCoreValley" type="_q7WLMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFe-oDZzEee7VKszZYHQZQ" name="getEnvCoreValleyFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rFe-oTZzEee7VKszZYHQZQ" name="return" type="_q7df8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFipADZzEee7VKszZYHQZQ" name="setEnvCoreValleyFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rFipATZzEee7VKszZYHQZQ" name="envCoreValleyFunctionType" type="_q7df8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFlsUDZzEee7VKszZYHQZQ" name="getEnvMonitorAlarmLog" visibility="public">
+        <ownedParameter xmi:id="_rFlsUTZzEee7VKszZYHQZQ" name="return" type="_q7k0sDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFpWsDZzEee7VKszZYHQZQ" name="setEnvMonitorAlarmLog" visibility="public">
+        <ownedParameter xmi:id="_rFpWsTZzEee7VKszZYHQZQ" name="envMonitorAlarmLog" type="_q7k0sDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFsaADZzEee7VKszZYHQZQ" name="getEnvMonitorAlarmRegistForm" visibility="public">
+        <ownedParameter xmi:id="_rFtBEDZzEee7VKszZYHQZQ" name="return" type="_q7q7UDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rFwrcDZzEee7VKszZYHQZQ" name="setEnvMonitorAlarmRegistForm" visibility="public">
+        <ownedParameter xmi:id="_rFwrcTZzEee7VKszZYHQZQ" name="envMonitorAlarmRegistForm" type="_q7q7UDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rF6ccDZzEee7VKszZYHQZQ" name="getEnvMonitorGasAlarm24hours" visibility="public">
+        <ownedParameter xmi:id="_rF6ccTZzEee7VKszZYHQZQ" name="return" type="_q7yQEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rF-t4DZzEee7VKszZYHQZQ" name="setEnvMonitorGasAlarm24hours" visibility="public">
+        <ownedParameter xmi:id="_rF-t4TZzEee7VKszZYHQZQ" name="envMonitorGasAlarm24hours" type="_q7yQEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGCYQDZzEee7VKszZYHQZQ" name="getLgtAlarmManage" visibility="public">
+        <ownedParameter xmi:id="_rGCYQTZzEee7VKszZYHQZQ" name="return" type="_q749wDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGGCoDZzEee7VKszZYHQZQ" name="setLgtAlarmManage" visibility="public">
+        <ownedParameter xmi:id="_rGGCoTZzEee7VKszZYHQZQ" name="lgtAlarmManage" type="_q749wDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGJF8DZzEee7VKszZYHQZQ" name="getLgtAlarmThreshold" visibility="public">
+        <ownedParameter xmi:id="_rGJF8TZzEee7VKszZYHQZQ" name="return" type="_q7_EYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGMwUDZzEee7VKszZYHQZQ" name="setLgtAlarmThreshold" visibility="public">
+        <ownedParameter xmi:id="_rGMwUTZzEee7VKszZYHQZQ" name="lgtAlarmThreshold" type="_q7_EYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGQasDZzEee7VKszZYHQZQ" name="getLgtAlarmTimes" visibility="public">
+        <ownedParameter xmi:id="_rGQasTZzEee7VKszZYHQZQ" name="return" type="_q8FyEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGUFEDZzEee7VKszZYHQZQ" name="setLgtAlarmTimes" visibility="public">
+        <ownedParameter xmi:id="_rGUFETZzEee7VKszZYHQZQ" name="lgtAlarmTimes" type="_q8FyEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGXIYDZzEee7VKszZYHQZQ" name="getLgtBlacklistManage" visibility="public">
+        <ownedParameter xmi:id="_rGXIYTZzEee7VKszZYHQZQ" name="return" type="_q8LRoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGaywDZzEee7VKszZYHQZQ" name="setLgtBlacklistManage" visibility="public">
+        <ownedParameter xmi:id="_rGaywTZzEee7VKszZYHQZQ" name="lgtBlacklistManage" type="_q8LRoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGedIDZzEee7VKszZYHQZQ" name="getLgtCarDispatch" visibility="public">
+        <ownedParameter xmi:id="_rGedITZzEee7VKszZYHQZQ" name="return" type="_q8RYQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGhgcDZzEee7VKszZYHQZQ" name="setLgtCarDispatch" visibility="public">
+        <ownedParameter xmi:id="_rGhgcTZzEee7VKszZYHQZQ" name="lgtCarDispatch" type="_q8RYQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGlK0DZzEee7VKszZYHQZQ" name="getLgtCarRealTimePostion" visibility="public">
+        <ownedParameter xmi:id="_rGlx4DZzEee7VKszZYHQZQ" name="return" type="_q8YF8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGo1MDZzEee7VKszZYHQZQ" name="setLgtCarRealTimePostion" visibility="public">
+        <ownedParameter xmi:id="_rGo1MTZzEee7VKszZYHQZQ" name="lgtCarRealTimePostion" type="_q8YF8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGtGoDZzEee7VKszZYHQZQ" name="getLgtDanCarAttRel" visibility="public">
+        <ownedParameter xmi:id="_rGtGoTZzEee7VKszZYHQZQ" name="return" type="_q8eMkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rGxYEDZzEee7VKszZYHQZQ" name="setLgtDanCarAttRel" visibility="public">
+        <ownedParameter xmi:id="_rGxYETZzEee7VKszZYHQZQ" name="lgtDanCarAttRel" type="_q8eMkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rG1CcDZzEee7VKszZYHQZQ" name="getLgtDangerousCarInfo" visibility="public">
+        <ownedParameter xmi:id="_rG1CcTZzEee7VKszZYHQZQ" name="return" type="_q8kTMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rG568DZzEee7VKszZYHQZQ" name="setLgtDangerousCarInfo" visibility="public">
+        <ownedParameter xmi:id="_rG568TZzEee7VKszZYHQZQ" name="lgtDangerousCarInfo" type="_q8kTMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rG8-QDZzEee7VKszZYHQZQ" name="getLgtEmergencyInfo" visibility="public">
+        <ownedParameter xmi:id="_rG8-QTZzEee7VKszZYHQZQ" name="return" type="_q8qZ0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHAooDZzEee7VKszZYHQZQ" name="setLgtEmergencyInfo" visibility="public">
+        <ownedParameter xmi:id="_rHAooTZzEee7VKszZYHQZQ" name="lgtEmergencyInfo" type="_q8qZ0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHETADZzEee7VKszZYHQZQ" name="getLgtEnterprise" visibility="public">
+        <ownedParameter xmi:id="_rHETATZzEee7VKszZYHQZQ" name="return" type="_q8xHgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHJLgDZzEee7VKszZYHQZQ" name="setLgtEnterprise" visibility="public">
+        <ownedParameter xmi:id="_rHJLgTZzEee7VKszZYHQZQ" name="lgtEnterprise" type="_q8xHgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHM14DZzEee7VKszZYHQZQ" name="getLgtKaOpen" visibility="public">
+        <ownedParameter xmi:id="_rHM14TZzEee7VKszZYHQZQ" name="return" type="_q83OIDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHRHUDZzEee7VKszZYHQZQ" name="setLgtKaOpen" visibility="public">
+        <ownedParameter xmi:id="_rHRuYDZzEee7VKszZYHQZQ" name="lgtKaOpen" type="_q83OIDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHUxsDZzEee7VKszZYHQZQ" name="getLgtParkArea" visibility="public">
+        <ownedParameter xmi:id="_rHUxsTZzEee7VKszZYHQZQ" name="return" type="_q89UwDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHZDIDZzEee7VKszZYHQZQ" name="setLgtParkArea" visibility="public">
+        <ownedParameter xmi:id="_rHZDITZzEee7VKszZYHQZQ" name="lgtParkArea" type="_q89UwDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHctgDZzEee7VKszZYHQZQ" name="getLgtRestrictedAreaInfo" visibility="public">
+        <ownedParameter xmi:id="_rHctgTZzEee7VKszZYHQZQ" name="return" type="_q9GesDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHg-8DZzEee7VKszZYHQZQ" name="setLgtRestrictedAreaInfo" visibility="public">
+        <ownedParameter xmi:id="_rHg-8TZzEee7VKszZYHQZQ" name="lgtRestrictedAreaInfo" type="_q9GesDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHkCQDZzEee7VKszZYHQZQ" name="getLgtSolveRoute" visibility="public">
+        <ownedParameter xmi:id="_rHkCQTZzEee7VKszZYHQZQ" name="return" type="_q9NzcDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHoTsDZzEee7VKszZYHQZQ" name="setLgtSolveRoute" visibility="public">
+        <ownedParameter xmi:id="_rHoTsTZzEee7VKszZYHQZQ" name="lgtSolveRoute" type="_q9NzcDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHr-EDZzEee7VKszZYHQZQ" name="getLgtSourceGoods" visibility="public">
+        <ownedParameter xmi:id="_rHr-ETZzEee7VKszZYHQZQ" name="return" type="_q9TTADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHvocDZzEee7VKszZYHQZQ" name="setLgtSourceGoods" visibility="public">
+        <ownedParameter xmi:id="_rHvocTZzEee7VKszZYHQZQ" name="lgtSourceGoods" type="_q9TTADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rHzS0DZzEee7VKszZYHQZQ" name="getLgtSourceGoodsInfo" visibility="public">
+        <ownedParameter xmi:id="_rHzS0TZzEee7VKszZYHQZQ" name="return" type="_q9aAsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rH29MDZzEee7VKszZYHQZQ" name="setLgtSourceGoodsInfo" visibility="public">
+        <ownedParameter xmi:id="_rH29MTZzEee7VKszZYHQZQ" name="lgtSourceGoodsInfo" type="_q9aAsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rH6nkDZzEee7VKszZYHQZQ" name="getLgtWaybillGoods" visibility="public">
+        <ownedParameter xmi:id="_rH6nkTZzEee7VKszZYHQZQ" name="return" type="_q9ijkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rH-5ADZzEee7VKszZYHQZQ" name="setLgtWaybillGoods" visibility="public">
+        <ownedParameter xmi:id="_rH-5ATZzEee7VKszZYHQZQ" name="lgtWaybillGoods" type="_q9ijkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rICjYDZzEee7VKszZYHQZQ" name="getLgtWaybillGoodsTemplate" visibility="public">
+        <ownedParameter xmi:id="_rICjYTZzEee7VKszZYHQZQ" name="return" type="_q9sUkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIFmsDZzEee7VKszZYHQZQ" name="setLgtWaybillGoodsTemplate" visibility="public">
+        <ownedParameter xmi:id="_rIFmsTZzEee7VKszZYHQZQ" name="lgtWaybillGoodsTemplate" type="_q9sUkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIJ4IDZzEee7VKszZYHQZQ" name="getLgtWaybillInfo" visibility="public">
+        <ownedParameter xmi:id="_rIJ4ITZzEee7VKszZYHQZQ" name="return" type="_q9zpUDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIOJkDZzEee7VKszZYHQZQ" name="setLgtWaybillInfo" visibility="public">
+        <ownedParameter xmi:id="_rIOJkTZzEee7VKszZYHQZQ" name="lgtWaybillInfo" type="_q9zpUDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIRM4DZzEee7VKszZYHQZQ" name="getSecCEiAccidents" visibility="public">
+        <ownedParameter xmi:id="_rIRM4TZzEee7VKszZYHQZQ" name="return" type="_q95v8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIU3QDZzEee7VKszZYHQZQ" name="setSecCEiAccidents" visibility="public">
+        <ownedParameter xmi:id="_rIU3QTZzEee7VKszZYHQZQ" name="secCEiAccidents" type="_q95v8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIYhoDZzEee7VKszZYHQZQ" name="getSecCEiAdmiliceinfo" visibility="public">
+        <ownedParameter xmi:id="_rIYhoTZzEee7VKszZYHQZQ" name="return" type="_q9_2kDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIcMADZzEee7VKszZYHQZQ" name="setSecCEiAdmiliceinfo" visibility="public">
+        <ownedParameter xmi:id="_rIcMATZzEee7VKszZYHQZQ" name="secCEiAdmiliceinfo" type="_q9_2kDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIf2YDZzEee7VKszZYHQZQ" name="getSecCEiChemical" visibility="public">
+        <ownedParameter xmi:id="_rIf2YTZzEee7VKszZYHQZQ" name="return" type="_q-K1sDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIjgwDZzEee7VKszZYHQZQ" name="setSecCEiChemical" visibility="public">
+        <ownedParameter xmi:id="_rIjgwTZzEee7VKszZYHQZQ" name="secCEiChemical" type="_q-K1sDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rInLIDZzEee7VKszZYHQZQ" name="getSecCEiDangerindustry" visibility="public">
+        <ownedParameter xmi:id="_rInLITZzEee7VKszZYHQZQ" name="return" type="_q-QVQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIq1gDZzEee7VKszZYHQZQ" name="setSecCEiDangerindustry" visibility="public">
+        <ownedParameter xmi:id="_rIq1gTZzEee7VKszZYHQZQ" name="secCEiDangerindustry" type="_q-QVQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIuf4DZzEee7VKszZYHQZQ" name="getSecCEiDangsrc" visibility="public">
+        <ownedParameter xmi:id="_rIuf4TZzEee7VKszZYHQZQ" name="return" type="_q-Wb4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rIyKQDZzEee7VKszZYHQZQ" name="setSecCEiDangsrc" visibility="public">
+        <ownedParameter xmi:id="_rIyKQTZzEee7VKszZYHQZQ" name="secCEiDangsrc" type="_q-Wb4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rI1NkDZzEee7VKszZYHQZQ" name="getSecCEiEnterpriseaudit" visibility="public">
+        <ownedParameter xmi:id="_rI10oDZzEee7VKszZYHQZQ" name="return" type="_q-dwoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rI5fADZzEee7VKszZYHQZQ" name="setSecCEiEnterpriseaudit" visibility="public">
+        <ownedParameter xmi:id="_rI5fATZzEee7VKszZYHQZQ" name="secCEiEnterpriseaudit" type="_q-dwoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rI9wcDZzEee7VKszZYHQZQ" name="getSecCEiEnterpriseinfo" visibility="public">
+        <ownedParameter xmi:id="_rI9wcTZzEee7VKszZYHQZQ" name="return" type="_q-j3QDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJBa0DZzEee7VKszZYHQZQ" name="setSecCEiEnterpriseinfo" visibility="public">
+        <ownedParameter xmi:id="_rJBa0TZzEee7VKszZYHQZQ" name="secCEiEnterpriseinfo" type="_q-j3QDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJEeIDZzEee7VKszZYHQZQ" name="getSecCEiFireworksindustry" visibility="public">
+        <ownedParameter xmi:id="_rJEeITZzEee7VKszZYHQZQ" name="return" type="_q-pW0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJIvkDZzEee7VKszZYHQZQ" name="setSecCEiFireworksindustry" visibility="public">
+        <ownedParameter xmi:id="_rJIvkTZzEee7VKszZYHQZQ" name="secCEiFireworksindustry" type="_q-pW0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJLy4DZzEee7VKszZYHQZQ" name="getSecCEiKeyplace" visibility="public">
+        <ownedParameter xmi:id="_rJLy4TZzEee7VKszZYHQZQ" name="return" type="_q-wEgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJPdQDZzEee7VKszZYHQZQ" name="setSecCEiKeyplace" visibility="public">
+        <ownedParameter xmi:id="_rJPdQTZzEee7VKszZYHQZQ" name="secCEiKeyplace" type="_q-wEgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJTHoDZzEee7VKszZYHQZQ" name="getSecCEiSecucheck" visibility="public">
+        <ownedParameter xmi:id="_rJTHoTZzEee7VKszZYHQZQ" name="return" type="_q-6ckDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJWyADZzEee7VKszZYHQZQ" name="setSecCEiSecucheck" visibility="public">
+        <ownedParameter xmi:id="_rJWyATZzEee7VKszZYHQZQ" name="secCEiSecucheck" type="_q-6ckDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJacYDZzEee7VKszZYHQZQ" name="getSecCEiStand" visibility="public">
+        <ownedParameter xmi:id="_rJacYTZzEee7VKszZYHQZQ" name="return" type="_q_AjMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJeGwDZzEee7VKszZYHQZQ" name="setSecCEiStand" visibility="public">
+        <ownedParameter xmi:id="_rJeGwTZzEee7VKszZYHQZQ" name="secCEiStand" type="_q_AjMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJhxIDZzEee7VKszZYHQZQ" name="getSecCStEntsafescore" visibility="public">
+        <ownedParameter xmi:id="_rJhxITZzEee7VKszZYHQZQ" name="return" type="_q_HQ4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJlbgDZzEee7VKszZYHQZQ" name="setSecCStEntsafescore" visibility="public">
+        <ownedParameter xmi:id="_rJlbgTZzEee7VKszZYHQZQ" name="secCStEntsafescore" type="_q_HQ4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJoe0DZzEee7VKszZYHQZQ" name="getEnergySupplyEnergyUnitData" visibility="public">
+        <ownedParameter xmi:id="_rJoe0TZzEee7VKszZYHQZQ" name="return" type="_q_MwcDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJyP0DZzEee7VKszZYHQZQ" name="setEnergySupplyEnergyUnitData" visibility="public">
+        <ownedParameter xmi:id="_rJyP0TZzEee7VKszZYHQZQ" name="energySupplyEnergyUnitData" type="_q_MwcDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJ1TIDZzEee7VKszZYHQZQ" name="getLgtPipeLocation" visibility="public">
+        <ownedParameter xmi:id="_rJ1TITZzEee7VKszZYHQZQ" name="return" type="_q_S3EDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJ5kkDZzEee7VKszZYHQZQ" name="setLgtPipeLocation" visibility="public">
+        <ownedParameter xmi:id="_rJ5kkTZzEee7VKszZYHQZQ" name="lgtPipeLocation" type="_q_S3EDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rJ9O8DZzEee7VKszZYHQZQ" name="getLgtPipeManage" visibility="public">
+        <ownedParameter xmi:id="_rJ9O8TZzEee7VKszZYHQZQ" name="return" type="_q_YWoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rKA5UDZzEee7VKszZYHQZQ" name="setLgtPipeManage" visibility="public">
+        <ownedParameter xmi:id="_rKA5UTZzEee7VKszZYHQZQ" name="lgtPipeManage" type="_q_YWoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qvdrUDZzEee7VKszZYHQZQ" name="GetAllObjectContentAction">
+      <generalization xmi:id="_rKEjsDZzEee7VKszZYHQZQ" general="_qxoOhTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKFx0DZzEee7VKszZYHQZQ" name="energyAlarmInterval" visibility="public" type="_qyoUEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKIOEDZzEee7VKszZYHQZQ" name="energyCollectData" visibility="public" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKLRYDZzEee7VKszZYHQZQ" name="energyCollectMachine" visibility="public" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKOUsDZzEee7VKszZYHQZQ" name="energyCollectSpot" visibility="public" type="_qzJ4gDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKQw8DZzEee7VKszZYHQZQ" name="energyConsumptionDataRed" visibility="public" type="_qzeBkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKT0QDZzEee7VKszZYHQZQ" name="energyConsumptionRecord" visibility="public" type="_qzugQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKW3kDZzEee7VKszZYHQZQ" name="energyEnterpriseInfo" visibility="public" type="_qz77oDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKZ64DZzEee7VKszZYHQZQ" name="energyEnterprisePosition" visibility="public" type="_q0J-EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKeMUDZzEee7VKszZYHQZQ" name="energyEnterpriseTarget" visibility="public" type="_q0XZcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKh2sDZzEee7VKszZYHQZQ" name="energyEntMonthReport" visibility="public" type="_q0mC8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKmIIDZzEee7VKszZYHQZQ" name="energyEntYearReport" visibility="public" type="_q07aIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKpygDZzEee7VKszZYHQZQ" name="energyGardenTarget" visibility="public" type="_q1W38DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKsOwDZzEee7VKszZYHQZQ" name="energyMessageRelEnt" visibility="public" type="_q1rBADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKv5IDZzEee7VKszZYHQZQ" name="energyMeterDevice" visibility="public" type="_q15qgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rKyVYDZzEee7VKszZYHQZQ" name="energyRawCoal" visibility="public" type="_q2F3wDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rK1YsDZzEee7VKszZYHQZQ" name="energyStaticData" visibility="public" type="_q2W9gDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rK4cADZzEee7VKszZYHQZQ" name="energySynthesizeEnergyUse" visibility="public" type="_q2ncMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rK7fUDZzEee7VKszZYHQZQ" name="energyTerminal" visibility="public" type="_q2vYADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rK-ioDZzEee7VKszZYHQZQ" name="energyTradeFile" visibility="public" type="_q23T0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLBl8DZzEee7VKszZYHQZQ" name="energyTradeInfo" visibility="public" type="_q3AdwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLECMDZzEee7VKszZYHQZQ" name="energyUseAudit" visibility="public" type="_q3IZkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLGecDZzEee7VKszZYHQZQ" name="energyUseAuditRecord" visibility="public" type="_q3QVYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLI6sDZzEee7VKszZYHQZQ" name="energyUseEnergyEquipment" visibility="public" type="_q3YRMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLLW8DZzEee7VKszZYHQZQ" name="energyVapour" visibility="public" type="_q3g0EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLOaQDZzEee7VKszZYHQZQ" name="energyWaterMeter" visibility="public" type="_q3nhwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLRdkDZzEee7VKszZYHQZQ" name="eneSupEneUnitRelFile" visibility="public" type="_q3wEoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLT50DZzEee7VKszZYHQZQ" name="eneUseEneEquipmentFile" visibility="public" type="_q33ZYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLW9IDZzEee7VKszZYHQZQ" name="envCoreAreas" visibility="public" type="_q3-HEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLZZYDZzEee7VKszZYHQZQ" name="envCoreControlZone" visibility="public" type="_q4ENsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLb1oDZzEee7VKszZYHQZQ" name="envCoreDischargeOutletInfo" visibility="public" type="_q4K7YDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLeR4DZzEee7VKszZYHQZQ" name="envCoreDischargeRule" visibility="public" type="_q4RpEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLhVMDZzEee7VKszZYHQZQ" name="envCoreEmergencyPlan" visibility="public" type="_q4Zk4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLjxcDZzEee7VKszZYHQZQ" name="envCoreEnterpriseInfo" visibility="public" type="_q4gSkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLmNsDZzEee7VKszZYHQZQ" name="envCoreEnterpriseKind" visibility="public" type="_q4nAQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLpRADZzEee7VKszZYHQZQ" name="envCoreEnterpriseScale" visibility="public" type="_q4tt8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLrtQDZzEee7VKszZYHQZQ" name="envCoreEnterpriseType" visibility="public" type="_q43e8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLuJgDZzEee7VKszZYHQZQ" name="envCoreEntPollutant" visibility="public" type="_q5AB0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLv-sDZzEee7VKszZYHQZQ" name="envCoreFuelType" visibility="public" type="_q5KZ4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rLya8DZzEee7VKszZYHQZQ" name="envCoreGasFunctionType" visibility="public" type="_q5SVsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rL1eQDZzEee7VKszZYHQZQ" name="envCoreIndustryCategory" visibility="public" type="_q5ZDYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rL36gDZzEee7VKszZYHQZQ" name="envCoreKeyPointType" visibility="public" type="_q5fKADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rL5vsDZzEee7VKszZYHQZQ" name="envCoreLetoutStateControl" visibility="public" type="_q5qwMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rL9aEDZzEee7VKszZYHQZQ" name="envCoreOutletType" visibility="public" type="_q5z6IDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMAdYDZzEee7VKszZYHQZQ" name="envCorePollStandardLimit" visibility="public" type="_q59rIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMCSkDZzEee7VKszZYHQZQ" name="envCorePollutant" visibility="public" type="_q6JRUDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMEu0DZzEee7VKszZYHQZQ" name="envCorePollutantType" visibility="public" type="_q6TpYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMGkADZzEee7VKszZYHQZQ" name="envCorePollutantUnit" visibility="public" type="_q6eogDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMJnUDZzEee7VKszZYHQZQ" name="envCoreRadiateSafetyPermit" visibility="public" type="_q6lWMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMLcgDZzEee7VKszZYHQZQ" name="envCoreRadioactiveSource" visibility="public" type="_q6vuQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMN4wDZzEee7VKszZYHQZQ" name="envCoreRayDevice" visibility="public" type="_q63qEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMQVADZzEee7VKszZYHQZQ" name="envCoreRegisterType" visibility="public" type="_q6_l4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMTYUDZzEee7VKszZYHQZQ" name="envCoreSewageDischarge" visibility="public" type="_q7HhsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMVNgDZzEee7VKszZYHQZQ" name="envCoreSubordination" visibility="public" type="_q7PdgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMXpwDZzEee7VKszZYHQZQ" name="envCoreValley" visibility="public" type="_q7WLMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMaGADZzEee7VKszZYHQZQ" name="envCoreValleyFunctionType" visibility="public" type="_q7df8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMciQDZzEee7VKszZYHQZQ" name="envMonitorAlarmLog" visibility="public" type="_q7k0sDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMe-gDZzEee7VKszZYHQZQ" name="envMonitorAlarmRegistForm" visibility="public" type="_q7q7UDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMiB0DZzEee7VKszZYHQZQ" name="envMonitorGasAlarm24hours" visibility="public" type="_q7yQEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMj3ADZzEee7VKszZYHQZQ" name="lgtAlarmManage" visibility="public" type="_q749wDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMmTQDZzEee7VKszZYHQZQ" name="lgtAlarmThreshold" visibility="public" type="_q7_EYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMovgDZzEee7VKszZYHQZQ" name="lgtAlarmTimes" visibility="public" type="_q8FyEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMrLwDZzEee7VKszZYHQZQ" name="lgtBlacklistManage" visibility="public" type="_q8LRoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMtoADZzEee7VKszZYHQZQ" name="lgtCarDispatch" visibility="public" type="_q8RYQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMwEQDZzEee7VKszZYHQZQ" name="lgtCarRealTimePostion" visibility="public" type="_q8YF8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rMyggDZzEee7VKszZYHQZQ" name="lgtDanCarAttRel" visibility="public" type="_q8eMkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rM08wDZzEee7VKszZYHQZQ" name="lgtDangerousCarInfo" visibility="public" type="_q8kTMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rM4AEDZzEee7VKszZYHQZQ" name="lgtEmergencyInfo" visibility="public" type="_q8qZ0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rM6cUDZzEee7VKszZYHQZQ" name="lgtEnterprise" visibility="public" type="_q8xHgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rM84kDZzEee7VKszZYHQZQ" name="lgtKaOpen" visibility="public" type="_q83OIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rM_U0DZzEee7VKszZYHQZQ" name="lgtParkArea" visibility="public" type="_q89UwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNBxEDZzEee7VKszZYHQZQ" name="lgtRestrictedAreaInfo" visibility="public" type="_q9GesDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNENUDZzEee7VKszZYHQZQ" name="lgtSolveRoute" visibility="public" type="_q9NzcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNGpkDZzEee7VKszZYHQZQ" name="lgtSourceGoods" visibility="public" type="_q9TTADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNJs4DZzEee7VKszZYHQZQ" name="lgtSourceGoodsInfo" visibility="public" type="_q9aAsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNLiEDZzEee7VKszZYHQZQ" name="lgtWaybillGoods" visibility="public" type="_q9ijkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNN-UDZzEee7VKszZYHQZQ" name="lgtWaybillGoodsTemplate" visibility="public" type="_q9sUkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNQakDZzEee7VKszZYHQZQ" name="lgtWaybillInfo" visibility="public" type="_q9zpUDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNS20DZzEee7VKszZYHQZQ" name="secCEiAccidents" visibility="public" type="_q95v8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNVTEDZzEee7VKszZYHQZQ" name="secCEiAdmiliceinfo" visibility="public" type="_q9_2kDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNXvUDZzEee7VKszZYHQZQ" name="secCEiChemical" visibility="public" type="_q-K1sDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNaLkDZzEee7VKszZYHQZQ" name="secCEiDangerindustry" visibility="public" type="_q-QVQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNcn0DZzEee7VKszZYHQZQ" name="secCEiDangsrc" visibility="public" type="_q-Wb4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNfEEDZzEee7VKszZYHQZQ" name="secCEiEnterpriseaudit" visibility="public" type="_q-dwoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNhgUDZzEee7VKszZYHQZQ" name="secCEiEnterpriseinfo" visibility="public" type="_q-j3QDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNj8kDZzEee7VKszZYHQZQ" name="secCEiFireworksindustry" visibility="public" type="_q-pW0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNmY0DZzEee7VKszZYHQZQ" name="secCEiKeyplace" visibility="public" type="_q-wEgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNttkDZzEee7VKszZYHQZQ" name="secCEiSecucheck" visibility="public" type="_q-6ckDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNww4DZzEee7VKszZYHQZQ" name="secCEiStand" visibility="public" type="_q_AjMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rNzNIDZzEee7VKszZYHQZQ" name="secCStEntsafescore" visibility="public" type="_q_HQ4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rN1pYDZzEee7VKszZYHQZQ" name="energySupplyEnergyUnitData" visibility="public" type="_q_MwcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rN4FoDZzEee7VKszZYHQZQ" name="lgtPipeLocation" visibility="public" type="_q_S3EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rN6h4DZzEee7VKszZYHQZQ" name="lgtPipeManage" visibility="public" type="_q_YWoDZzEee7VKszZYHQZQ"/>
+      <ownedOperation xmi:id="_rN7wADZzEee7VKszZYHQZQ" name="execute" visibility="public">
+        <ownedParameter xmi:id="_rN7wATZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rN9lMDZzEee7VKszZYHQZQ" name="jsonPart" visibility="private">
+        <ownedParameter xmi:id="_rN9lMTZzEee7VKszZYHQZQ" name="o" type="_rN8-IDZzEee7VKszZYHQZQ"/>
+        <ownedParameter xmi:id="_rN9lMjZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qvmOMDZzEee7VKszZYHQZQ" name="QueryDataAction">
+      <generalization xmi:id="_rN-zUDZzEee7VKszZYHQZQ" general="_qxoOhTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rN_aYDZzEee7VKszZYHQZQ" name="sqlString" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rN_aYTZzEee7VKszZYHQZQ" value=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rOAogDZzEee7VKszZYHQZQ" name="pageSize" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rOAogTZzEee7VKszZYHQZQ" value=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rOB2oDZzEee7VKszZYHQZQ" name="page" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rOB2oTZzEee7VKszZYHQZQ" value=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rOES4DZzEee7VKszZYHQZQ" name="list" visibility="public" type="_rODEwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOFhADZzEee7VKszZYHQZQ" name="totalNum" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rOFhATZzEee7VKszZYHQZQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rOGvIDZzEee7VKszZYHQZQ" name="countDownLatch" visibility="private" type="_qxpcojZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOHWMDZzEee7VKszZYHQZQ" name="className" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rOHWMTZzEee7VKszZYHQZQ" value=""/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qvoDYDZzEee7VKszZYHQZQ" name="queryTotalNum">
+        <ownedOperation xmi:id="_rOOD4DZzEee7VKszZYHQZQ" name="run" visibility="public"/>
+      </nestedClassifier>
+      <ownedOperation xmi:id="_rOIkUDZzEee7VKszZYHQZQ" name="execute" visibility="public">
+        <ownedParameter xmi:id="_rOIkUTZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOJLYDZzEee7VKszZYHQZQ" name="getSqlString" visibility="public">
+        <ownedParameter xmi:id="_rOJLYTZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOJycDZzEee7VKszZYHQZQ" name="setSqlString" visibility="public">
+        <ownedParameter xmi:id="_rOJycTZzEee7VKszZYHQZQ" name="sqlString">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOKZgDZzEee7VKszZYHQZQ" name="getPageSize" visibility="public">
+        <ownedParameter xmi:id="_rOKZgTZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOLAkDZzEee7VKszZYHQZQ" name="setPageSize" visibility="public">
+        <ownedParameter xmi:id="_rOLAkTZzEee7VKszZYHQZQ" name="pageSize">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOLnoDZzEee7VKszZYHQZQ" name="getPage" visibility="public">
+        <ownedParameter xmi:id="_rOLnoTZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOM1wDZzEee7VKszZYHQZQ" name="setPage" visibility="public">
+        <ownedParameter xmi:id="_rOM1wTZzEee7VKszZYHQZQ" name="page">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qvp4kDZzEee7VKszZYHQZQ" name="AddDataAction">
+      <generalization xmi:id="_rOPSADZzEee7VKszZYHQZQ" general="_qxoOhTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOPSATZzEee7VKszZYHQZQ" name="energyCollectData" visibility="package" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOQgIDZzEee7VKszZYHQZQ" name="energyCollectMachine" visibility="package" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rORHMDZzEee7VKszZYHQZQ" name="targetString" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rORHMTZzEee7VKszZYHQZQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_rORuQDZzEee7VKszZYHQZQ" name="getEnergyCollectMachine" visibility="public">
+        <ownedParameter xmi:id="_rORuQTZzEee7VKszZYHQZQ" name="return" type="_qxqDsTZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOSVUDZzEee7VKszZYHQZQ" name="setEnergyCollectMachine" visibility="public">
+        <ownedParameter xmi:id="_rOSVUTZzEee7VKszZYHQZQ" name="energyCollectMachine" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOS8YDZzEee7VKszZYHQZQ" name="execute" visibility="public">
+        <ownedParameter xmi:id="_rOS8YTZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOTjcDZzEee7VKszZYHQZQ" name="getEnergyCollectData" visibility="public">
+        <ownedParameter xmi:id="_rOTjcTZzEee7VKszZYHQZQ" name="return" type="_qxqDsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rOUKgDZzEee7VKszZYHQZQ" name="setEnergyCollectData" visibility="public">
+        <ownedParameter xmi:id="_rOUKgTZzEee7VKszZYHQZQ" name="energyCollectData" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qvrGsDZzEee7VKszZYHQZQ" name="UpdateDataAction">
+      <generalization xmi:id="_rOUxkDZzEee7VKszZYHQZQ" general="_qxoOhTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOXN0DZzEee7VKszZYHQZQ" name="energyAlarmInterval" visibility="public" type="_qyoUEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOdUcDZzEee7VKszZYHQZQ" name="energyCollectData" visibility="public" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOi0ADZzEee7VKszZYHQZQ" name="energyCollectMachine" visibility="public" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOo6oDZzEee7VKszZYHQZQ" name="energyCollectSpot" visibility="public" type="_qzJ4gDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rOvoUDZzEee7VKszZYHQZQ" name="energyConsumptionDataRed" visibility="public" type="_qzeBkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rO1H4DZzEee7VKszZYHQZQ" name="energyConsumptionRecord" visibility="public" type="_qzugQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rO7OgDZzEee7VKszZYHQZQ" name="energyEnterpriseInfo" visibility="public" type="_qz77oDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPAuEDZzEee7VKszZYHQZQ" name="energyEnterprisePosition" visibility="public" type="_q0J-EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPGNoDZzEee7VKszZYHQZQ" name="energyEnterpriseTarget" visibility="public" type="_q0XZcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPMUQDZzEee7VKszZYHQZQ" name="energyEntMonthReport" visibility="public" type="_q0mC8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPRz0DZzEee7VKszZYHQZQ" name="energyEntYearReport" visibility="public" type="_q07aIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPXTYDZzEee7VKszZYHQZQ" name="energyGardenTarget" visibility="public" type="_q1W38DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPcy8DZzEee7VKszZYHQZQ" name="energyMessageRelEnt" visibility="public" type="_q1rBADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPjgoDZzEee7VKszZYHQZQ" name="energyMeterDevice" visibility="public" type="_q15qgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPpAMDZzEee7VKszZYHQZQ" name="energyRawCoal" visibility="public" type="_q2F3wDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rPufwDZzEee7VKszZYHQZQ" name="energyStaticData" visibility="public" type="_q2W9gDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rP0mYDZzEee7VKszZYHQZQ" name="energySynthesizeEnergyUse" visibility="public" type="_q2ncMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rP6F8DZzEee7VKszZYHQZQ" name="energyTerminal" visibility="public" type="_q2vYADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQAMkDZzEee7VKszZYHQZQ" name="energyTradeFile" visibility="public" type="_q23T0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQFFEDZzEee7VKszZYHQZQ" name="energyTradeInfo" visibility="public" type="_q3AdwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQLLsDZzEee7VKszZYHQZQ" name="energyUseAudit" visibility="public" type="_q3IZkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQQrQDZzEee7VKszZYHQZQ" name="energyUseAuditRecord" visibility="public" type="_q3QVYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQWK0DZzEee7VKszZYHQZQ" name="energyUseEnergyEquipment" visibility="public" type="_q3YRMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQc4gDZzEee7VKszZYHQZQ" name="energyVapour" visibility="public" type="_q3g0EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQhxADZzEee7VKszZYHQZQ" name="energyWaterMeter" visibility="public" type="_q3nhwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQn3oDZzEee7VKszZYHQZQ" name="eneSupEneUnitRelFile" visibility="public" type="_q3wEoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQt-QDZzEee7VKszZYHQZQ" name="eneUseEneEquipmentFile" visibility="public" type="_q33ZYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQ0E4DZzEee7VKszZYHQZQ" name="envCoreAreas" visibility="public" type="_q3-HEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rQ6LgDZzEee7VKszZYHQZQ" name="envCoreControlZone" visibility="public" type="_q4ENsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRASIDZzEee7VKszZYHQZQ" name="envCoreDischargeOutletInfo" visibility="public" type="_q4K7YDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRGYwDZzEee7VKszZYHQZQ" name="envCoreDischargeRule" visibility="public" type="_q4RpEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRMfYDZzEee7VKszZYHQZQ" name="envCoreEmergencyPlan" visibility="public" type="_q4Zk4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRR-8DZzEee7VKszZYHQZQ" name="envCoreEnterpriseInfo" visibility="public" type="_q4gSkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRYsoDZzEee7VKszZYHQZQ" name="envCoreEnterpriseKind" visibility="public" type="_q4nAQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRlg8DZzEee7VKszZYHQZQ" name="envCoreEnterpriseScale" visibility="public" type="_q4tt8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRrAgDZzEee7VKszZYHQZQ" name="envCoreEnterpriseType" visibility="public" type="_q43e8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rRxHIDZzEee7VKszZYHQZQ" name="envCoreEntPollutant" visibility="public" type="_q5AB0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rR2msDZzEee7VKszZYHQZQ" name="envCoreFuelType" visibility="public" type="_q5KZ4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rR8GQDZzEee7VKszZYHQZQ" name="envCoreGasFunctionType" visibility="public" type="_q5SVsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSCM4DZzEee7VKszZYHQZQ" name="envCoreIndustryCategory" visibility="public" type="_q5ZDYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSHscDZzEee7VKszZYHQZQ" name="envCoreKeyPointType" visibility="public" type="_q5fKADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSNzEDZzEee7VKszZYHQZQ" name="envCoreLetoutStateControl" visibility="public" type="_q5qwMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSTSoDZzEee7VKszZYHQZQ" name="envCoreOutletType" visibility="public" type="_q5z6IDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSZZQDZzEee7VKszZYHQZQ" name="envCorePollStandardLimit" visibility="public" type="_q59rIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSe40DZzEee7VKszZYHQZQ" name="envCorePollutant" visibility="public" type="_q6JRUDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSkYYDZzEee7VKszZYHQZQ" name="envCorePollutantType" visibility="public" type="_q6TpYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSp38DZzEee7VKszZYHQZQ" name="envCorePollutantUnit" visibility="public" type="_q6eogDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rSvXgDZzEee7VKszZYHQZQ" name="envCoreRadiateSafetyPermit" visibility="public" type="_q6lWMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rS1eIDZzEee7VKszZYHQZQ" name="envCoreRadioactiveSource" visibility="public" type="_q6vuQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rS69sDZzEee7VKszZYHQZQ" name="envCoreRayDevice" visibility="public" type="_q63qEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTAdQDZzEee7VKszZYHQZQ" name="envCoreRegisterType" visibility="public" type="_q6_l4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTGj4DZzEee7VKszZYHQZQ" name="envCoreSewageDischarge" visibility="public" type="_q7HhsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTMDcDZzEee7VKszZYHQZQ" name="envCoreSubordination" visibility="public" type="_q7PdgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTRjADZzEee7VKszZYHQZQ" name="envCoreValley" visibility="public" type="_q7WLMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTXCkDZzEee7VKszZYHQZQ" name="envCoreValleyFunctionType" visibility="public" type="_q7df8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTdJMDZzEee7VKszZYHQZQ" name="envMonitorAlarmLog" visibility="public" type="_q7k0sDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTiowDZzEee7VKszZYHQZQ" name="envMonitorAlarmRegistForm" visibility="public" type="_q7q7UDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTovYDZzEee7VKszZYHQZQ" name="envMonitorGasAlarm24hours" visibility="public" type="_q7yQEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rTuO8DZzEee7VKszZYHQZQ" name="lgtAlarmManage" visibility="public" type="_q749wDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rT0VkDZzEee7VKszZYHQZQ" name="lgtAlarmThreshold" visibility="public" type="_q7_EYDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rT51IDZzEee7VKszZYHQZQ" name="lgtAlarmTimes" visibility="public" type="_q8FyEDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rT_UsDZzEee7VKszZYHQZQ" name="lgtBlacklistManage" visibility="public" type="_q8LRoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rUE0QDZzEee7VKszZYHQZQ" name="lgtCarDispatch" visibility="public" type="_q8RYQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rULh8DZzEee7VKszZYHQZQ" name="lgtCarRealTimePostion" visibility="public" type="_q8YF8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rURBgDZzEee7VKszZYHQZQ" name="lgtDanCarAttRel" visibility="public" type="_q8eMkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rUXvMDZzEee7VKszZYHQZQ" name="lgtDangerousCarInfo" visibility="public" type="_q8kTMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rUdOwDZzEee7VKszZYHQZQ" name="lgtEmergencyInfo" visibility="public" type="_q8qZ0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rUiuUDZzEee7VKszZYHQZQ" name="lgtEnterprise" visibility="public" type="_q8xHgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rUo08DZzEee7VKszZYHQZQ" name="lgtKaOpen" visibility="public" type="_q83OIDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rUuUgDZzEee7VKszZYHQZQ" name="lgtParkArea" visibility="public" type="_q89UwDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rU0bIDZzEee7VKszZYHQZQ" name="lgtRestrictedAreaInfo" visibility="public" type="_q9GesDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rU56sDZzEee7VKszZYHQZQ" name="lgtSolveRoute" visibility="public" type="_q9NzcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rU_aQDZzEee7VKszZYHQZQ" name="lgtSourceGoods" visibility="public" type="_q9TTADZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVGH8DZzEee7VKszZYHQZQ" name="lgtSourceGoodsInfo" visibility="public" type="_q9aAsDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVLAcDZzEee7VKszZYHQZQ" name="lgtWaybillGoods" visibility="public" type="_q9ijkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVX0wDZzEee7VKszZYHQZQ" name="lgtWaybillGoodsTemplate" visibility="public" type="_q9sUkDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVdUUDZzEee7VKszZYHQZQ" name="lgtWaybillInfo" visibility="public" type="_q9zpUDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVja8DZzEee7VKszZYHQZQ" name="secCEiAccidents" visibility="public" type="_q95v8DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVo6gDZzEee7VKszZYHQZQ" name="secCEiAdmiliceinfo" visibility="public" type="_q9_2kDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVuaEDZzEee7VKszZYHQZQ" name="secCEiChemical" visibility="public" type="_q-K1sDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rVz5oDZzEee7VKszZYHQZQ" name="secCEiDangerindustry" visibility="public" type="_q-QVQDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rV5ZMDZzEee7VKszZYHQZQ" name="secCEiDangsrc" visibility="public" type="_q-Wb4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rV-4wDZzEee7VKszZYHQZQ" name="secCEiEnterpriseaudit" visibility="public" type="_q-dwoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWE_YDZzEee7VKszZYHQZQ" name="secCEiEnterpriseinfo" visibility="public" type="_q-j3QDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWLGADZzEee7VKszZYHQZQ" name="secCEiFireworksindustry" visibility="public" type="_q-pW0DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWQlkDZzEee7VKszZYHQZQ" name="secCEiKeyplace" visibility="public" type="_q-wEgDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWWsMDZzEee7VKszZYHQZQ" name="secCEiSecucheck" visibility="public" type="_q-6ckDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWcy0DZzEee7VKszZYHQZQ" name="secCEiStand" visibility="public" type="_q_AjMDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWiSYDZzEee7VKszZYHQZQ" name="secCStEntsafescore" visibility="public" type="_q_HQ4DZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWnx8DZzEee7VKszZYHQZQ" name="energySupplyEnergyUnitData" visibility="public" type="_q_MwcDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWt4kDZzEee7VKszZYHQZQ" name="lgtPipeLocation" visibility="public" type="_q_S3EDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rWzYIDZzEee7VKszZYHQZQ" name="lgtPipeManage" visibility="public" type="_q_YWoDZzEee7VKszZYHQZQ"/>
+      <ownedAttribute xmi:id="_rW43sDZzEee7VKszZYHQZQ" name="targetString" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rW43sTZzEee7VKszZYHQZQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_rW77ADZzEee7VKszZYHQZQ" name="execute" visibility="public">
+        <ownedParameter xmi:id="_rW77ATZzEee7VKszZYHQZQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rW_lYDZzEee7VKszZYHQZQ" name="getEnergyAlarmInterval" visibility="public">
+        <ownedParameter xmi:id="_rW_lYTZzEee7VKszZYHQZQ" name="return" type="_qyoUEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXCosDZzEee7VKszZYHQZQ" name="setEnergyAlarmInterval" visibility="public">
+        <ownedParameter xmi:id="_rXCosTZzEee7VKszZYHQZQ" name="energyAlarmInterval" type="_qyoUEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXFE8DZzEee7VKszZYHQZQ" name="getEnergyCollectData" visibility="public">
+        <ownedParameter xmi:id="_rXFE8TZzEee7VKszZYHQZQ" name="return" type="_qxqDsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXJWYDZzEee7VKszZYHQZQ" name="setEnergyCollectData" visibility="public">
+        <ownedParameter xmi:id="_rXJWYTZzEee7VKszZYHQZQ" name="energyCollectData" type="_qxqDsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXLyoDZzEee7VKszZYHQZQ" name="getEnergyCollectMachine" visibility="public">
+        <ownedParameter xmi:id="_rXLyoTZzEee7VKszZYHQZQ" name="return" type="_qxqDsTZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXPdADZzEee7VKszZYHQZQ" name="setEnergyCollectMachine" visibility="public">
+        <ownedParameter xmi:id="_rXPdATZzEee7VKszZYHQZQ" name="energyCollectMachine" type="_qxqDsTZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXR5QDZzEee7VKszZYHQZQ" name="getEnergyCollectSpot" visibility="public">
+        <ownedParameter xmi:id="_rXR5QTZzEee7VKszZYHQZQ" name="return" type="_qzJ4gDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXVjoDZzEee7VKszZYHQZQ" name="setEnergyCollectSpot" visibility="public">
+        <ownedParameter xmi:id="_rXVjoTZzEee7VKszZYHQZQ" name="energyCollectSpot" type="_qzJ4gDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXYm8DZzEee7VKszZYHQZQ" name="getEnergyConsumptionDataRed" visibility="public">
+        <ownedParameter xmi:id="_rXYm8TZzEee7VKszZYHQZQ" name="return" type="_qzeBkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXbqQDZzEee7VKszZYHQZQ" name="setEnergyConsumptionDataRed" visibility="public">
+        <ownedParameter xmi:id="_rXbqQTZzEee7VKszZYHQZQ" name="energyConsumptionDataRed" type="_qzeBkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXetkDZzEee7VKszZYHQZQ" name="getEnergyConsumptionRecord" visibility="public">
+        <ownedParameter xmi:id="_rXetkTZzEee7VKszZYHQZQ" name="return" type="_qzugQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXhw4DZzEee7VKszZYHQZQ" name="setEnergyConsumptionRecord" visibility="public">
+        <ownedParameter xmi:id="_rXhw4TZzEee7VKszZYHQZQ" name="energyConsumptionRecord" type="_qzugQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXlbQDZzEee7VKszZYHQZQ" name="getEnergyEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_rXlbQTZzEee7VKszZYHQZQ" name="return" type="_qz77oDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXoekDZzEee7VKszZYHQZQ" name="setEnergyEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_rXoekTZzEee7VKszZYHQZQ" name="energyEnterpriseInfo" type="_qz77oDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXq60DZzEee7VKszZYHQZQ" name="getEnergyEnterprisePosition" visibility="public">
+        <ownedParameter xmi:id="_rXq60TZzEee7VKszZYHQZQ" name="return" type="_q0J-EDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXulMDZzEee7VKszZYHQZQ" name="setEnergyEnterprisePosition" visibility="public">
+        <ownedParameter xmi:id="_rXulMTZzEee7VKszZYHQZQ" name="energyEnterprisePosition" type="_q0J-EDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rXxogDZzEee7VKszZYHQZQ" name="getEnergyEnterpriseTarget" visibility="public">
+        <ownedParameter xmi:id="_rXxogTZzEee7VKszZYHQZQ" name="return" type="_q0XZcDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rX0r0DZzEee7VKszZYHQZQ" name="setEnergyEnterpriseTarget" visibility="public">
+        <ownedParameter xmi:id="_rX0r0TZzEee7VKszZYHQZQ" name="energyEnterpriseTarget" type="_q0XZcDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rX4WMDZzEee7VKszZYHQZQ" name="getEnergyEntMonthReport" visibility="public">
+        <ownedParameter xmi:id="_rX4WMTZzEee7VKszZYHQZQ" name="return" type="_q0mC8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rX7ZgDZzEee7VKszZYHQZQ" name="setEnergyEntMonthReport" visibility="public">
+        <ownedParameter xmi:id="_rX7ZgTZzEee7VKszZYHQZQ" name="energyEntMonthReport" type="_q0mC8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rX_D4DZzEee7VKszZYHQZQ" name="getEnergyEntYearReport" visibility="public">
+        <ownedParameter xmi:id="_rX_D4TZzEee7VKszZYHQZQ" name="return" type="_q07aIDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYCHMDZzEee7VKszZYHQZQ" name="setEnergyEntYearReport" visibility="public">
+        <ownedParameter xmi:id="_rYCHMTZzEee7VKszZYHQZQ" name="energyEntYearReport" type="_q07aIDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYFKgDZzEee7VKszZYHQZQ" name="getEnergyGardenTarget" visibility="public">
+        <ownedParameter xmi:id="_rYFKgTZzEee7VKszZYHQZQ" name="return" type="_q1W38DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYIN0DZzEee7VKszZYHQZQ" name="setEnergyGardenTarget" visibility="public">
+        <ownedParameter xmi:id="_rYIN0TZzEee7VKszZYHQZQ" name="energyGardenTarget" type="_q1W38DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYMfQDZzEee7VKszZYHQZQ" name="getEnergyMessageRelEnt" visibility="public">
+        <ownedParameter xmi:id="_rYMfQTZzEee7VKszZYHQZQ" name="return" type="_q1rBADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYQJoDZzEee7VKszZYHQZQ" name="setEnergyMessageRelEnt" visibility="public">
+        <ownedParameter xmi:id="_rYQJoTZzEee7VKszZYHQZQ" name="energyMessageRelEnt" type="_q1rBADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYTM8DZzEee7VKszZYHQZQ" name="getEnergyMeterDevice" visibility="public">
+        <ownedParameter xmi:id="_rYTM8TZzEee7VKszZYHQZQ" name="return" type="_q15qgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYWQQDZzEee7VKszZYHQZQ" name="setEnergyMeterDevice" visibility="public">
+        <ownedParameter xmi:id="_rYWQQTZzEee7VKszZYHQZQ" name="energyMeterDevice" type="_q15qgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYZTkDZzEee7VKszZYHQZQ" name="getEnergyRawCoal" visibility="public">
+        <ownedParameter xmi:id="_rYZTkTZzEee7VKszZYHQZQ" name="return" type="_q2F3wDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYc98DZzEee7VKszZYHQZQ" name="setEnergyRawCoal" visibility="public">
+        <ownedParameter xmi:id="_rYc98TZzEee7VKszZYHQZQ" name="energyRawCoal" type="_q2F3wDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYgBQDZzEee7VKszZYHQZQ" name="getEnergyStaticData" visibility="public">
+        <ownedParameter xmi:id="_rYgBQTZzEee7VKszZYHQZQ" name="return" type="_q2W9gDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYjroDZzEee7VKszZYHQZQ" name="setEnergyStaticData" visibility="public">
+        <ownedParameter xmi:id="_rYjroTZzEee7VKszZYHQZQ" name="energyStaticData" type="_q2W9gDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYmu8DZzEee7VKszZYHQZQ" name="getEnergySynthesizeEnergyUse" visibility="public">
+        <ownedParameter xmi:id="_rYmu8TZzEee7VKszZYHQZQ" name="return" type="_q2ncMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYpyQDZzEee7VKszZYHQZQ" name="setEnergySynthesizeEnergyUse" visibility="public">
+        <ownedParameter xmi:id="_rYpyQTZzEee7VKszZYHQZQ" name="energySynthesizeEnergyUse" type="_q2ncMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYs1kDZzEee7VKszZYHQZQ" name="getEnergyTerminal" visibility="public">
+        <ownedParameter xmi:id="_rYs1kTZzEee7VKszZYHQZQ" name="return" type="_q2vYADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYv44DZzEee7VKszZYHQZQ" name="setEnergyTerminal" visibility="public">
+        <ownedParameter xmi:id="_rYv44TZzEee7VKszZYHQZQ" name="energyTerminal" type="_q2vYADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rYzjQDZzEee7VKszZYHQZQ" name="getEnergyTradeFile" visibility="public">
+        <ownedParameter xmi:id="_rYzjQTZzEee7VKszZYHQZQ" name="return" type="_q23T0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rY2mkDZzEee7VKszZYHQZQ" name="setEnergyTradeFile" visibility="public">
+        <ownedParameter xmi:id="_rY2mkTZzEee7VKszZYHQZQ" name="energyTradeFile" type="_q23T0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rY6Q8DZzEee7VKszZYHQZQ" name="getEnergyTradeInfo" visibility="public">
+        <ownedParameter xmi:id="_rY6Q8TZzEee7VKszZYHQZQ" name="return" type="_q3AdwDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rY9UQDZzEee7VKszZYHQZQ" name="setEnergyTradeInfo" visibility="public">
+        <ownedParameter xmi:id="_rY9UQTZzEee7VKszZYHQZQ" name="energyTradeInfo" type="_q3AdwDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZAXkDZzEee7VKszZYHQZQ" name="getEnergyUseAudit" visibility="public">
+        <ownedParameter xmi:id="_rZAXkTZzEee7VKszZYHQZQ" name="return" type="_q3IZkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZEB8DZzEee7VKszZYHQZQ" name="setEnergyUseAudit" visibility="public">
+        <ownedParameter xmi:id="_rZEB8TZzEee7VKszZYHQZQ" name="energyUseAudit" type="_q3IZkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZHFQDZzEee7VKszZYHQZQ" name="getEnergyUseAuditRecord" visibility="public">
+        <ownedParameter xmi:id="_rZHFQTZzEee7VKszZYHQZQ" name="return" type="_q3QVYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZPoIDZzEee7VKszZYHQZQ" name="setEnergyUseAuditRecord" visibility="public">
+        <ownedParameter xmi:id="_rZPoITZzEee7VKszZYHQZQ" name="energyUseAuditRecord" type="_q3QVYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZSrcDZzEee7VKszZYHQZQ" name="getEnergyUseEnergyEquipment" visibility="public">
+        <ownedParameter xmi:id="_rZSrcTZzEee7VKszZYHQZQ" name="return" type="_q3YRMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZWV0DZzEee7VKszZYHQZQ" name="setEnergyUseEnergyEquipment" visibility="public">
+        <ownedParameter xmi:id="_rZWV0TZzEee7VKszZYHQZQ" name="energyUseEnergyEquipment" type="_q3YRMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZZZIDZzEee7VKszZYHQZQ" name="getEnergyVapour" visibility="public">
+        <ownedParameter xmi:id="_rZZZITZzEee7VKszZYHQZQ" name="return" type="_q3g0EDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZcccDZzEee7VKszZYHQZQ" name="setEnergyVapour" visibility="public">
+        <ownedParameter xmi:id="_rZcccTZzEee7VKszZYHQZQ" name="energyVapour" type="_q3g0EDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZffwDZzEee7VKszZYHQZQ" name="getEnergyWaterMeter" visibility="public">
+        <ownedParameter xmi:id="_rZffwTZzEee7VKszZYHQZQ" name="return" type="_q3nhwDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZjKIDZzEee7VKszZYHQZQ" name="setEnergyWaterMeter" visibility="public">
+        <ownedParameter xmi:id="_rZjKITZzEee7VKszZYHQZQ" name="energyWaterMeter" type="_q3nhwDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZmNcDZzEee7VKszZYHQZQ" name="getEneSupEneUnitRelFile" visibility="public">
+        <ownedParameter xmi:id="_rZmNcTZzEee7VKszZYHQZQ" name="return" type="_q3wEoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZpQwDZzEee7VKszZYHQZQ" name="setEneSupEneUnitRelFile" visibility="public">
+        <ownedParameter xmi:id="_rZpQwTZzEee7VKszZYHQZQ" name="eneSupEneUnitRelFile" type="_q3wEoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZsUEDZzEee7VKszZYHQZQ" name="getEneUseEneEquipmentFile" visibility="public">
+        <ownedParameter xmi:id="_rZsUETZzEee7VKszZYHQZQ" name="return" type="_q33ZYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZwlgDZzEee7VKszZYHQZQ" name="setEneUseEneEquipmentFile" visibility="public">
+        <ownedParameter xmi:id="_rZwlgTZzEee7VKszZYHQZQ" name="eneUseEneEquipmentFile" type="_q33ZYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZzo0DZzEee7VKszZYHQZQ" name="getEnvCoreAreas" visibility="public">
+        <ownedParameter xmi:id="_rZzo0TZzEee7VKszZYHQZQ" name="return" type="_q3-HEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZ2sIDZzEee7VKszZYHQZQ" name="setEnvCoreAreas" visibility="public">
+        <ownedParameter xmi:id="_rZ2sITZzEee7VKszZYHQZQ" name="envCoreAreas" type="_q3-HEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZ5vcDZzEee7VKszZYHQZQ" name="getEnvCoreControlZone" visibility="public">
+        <ownedParameter xmi:id="_rZ5vcTZzEee7VKszZYHQZQ" name="return" type="_q4ENsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rZ-A4DZzEee7VKszZYHQZQ" name="setEnvCoreControlZone" visibility="public">
+        <ownedParameter xmi:id="_rZ-A4TZzEee7VKszZYHQZQ" name="envCoreControlZone" type="_q4ENsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raBEMDZzEee7VKszZYHQZQ" name="getEnvCoreDischargeOutletInfo" visibility="public">
+        <ownedParameter xmi:id="_raBEMTZzEee7VKszZYHQZQ" name="return" type="_q4K7YDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raEHgDZzEee7VKszZYHQZQ" name="setEnvCoreDischargeOutletInfo" visibility="public">
+        <ownedParameter xmi:id="_raEHgTZzEee7VKszZYHQZQ" name="envCoreDischargeOutletInfo" type="_q4K7YDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raHx4DZzEee7VKszZYHQZQ" name="getEnvCoreDischargeRule" visibility="public">
+        <ownedParameter xmi:id="_raHx4TZzEee7VKszZYHQZQ" name="return" type="_q4RpEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raMDUDZzEee7VKszZYHQZQ" name="setEnvCoreDischargeRule" visibility="public">
+        <ownedParameter xmi:id="_raMDUTZzEee7VKszZYHQZQ" name="envCoreDischargeRule" type="_q4RpEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raPtsDZzEee7VKszZYHQZQ" name="getEnvCoreEmergencyPlan" visibility="public">
+        <ownedParameter xmi:id="_raPtsTZzEee7VKszZYHQZQ" name="return" type="_q4Zk4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raTYEDZzEee7VKszZYHQZQ" name="setEnvCoreEmergencyPlan" visibility="public">
+        <ownedParameter xmi:id="_raTYETZzEee7VKszZYHQZQ" name="envCoreEmergencyPlan" type="_q4Zk4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raWbYDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_raWbYTZzEee7VKszZYHQZQ" name="return" type="_q4gSkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raaFwDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseInfo" visibility="public">
+        <ownedParameter xmi:id="_raaFwTZzEee7VKszZYHQZQ" name="envCoreEnterpriseInfo" type="_q4gSkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_radJEDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseKind" visibility="public">
+        <ownedParameter xmi:id="_radJETZzEee7VKszZYHQZQ" name="return" type="_q4nAQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ragzcDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseKind" visibility="public">
+        <ownedParameter xmi:id="_ragzcTZzEee7VKszZYHQZQ" name="envCoreEnterpriseKind" type="_q4nAQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raj2wDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseScale" visibility="public">
+        <ownedParameter xmi:id="_raj2wTZzEee7VKszZYHQZQ" name="return" type="_q4tt8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ranhIDZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseScale" visibility="public">
+        <ownedParameter xmi:id="_ranhITZzEee7VKszZYHQZQ" name="envCoreEnterpriseScale" type="_q4tt8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_raqkcDZzEee7VKszZYHQZQ" name="getEnvCoreEnterpriseType" visibility="public">
+        <ownedParameter xmi:id="_raqkcTZzEee7VKszZYHQZQ" name="return" type="_q43e8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rauO0DZzEee7VKszZYHQZQ" name="setEnvCoreEnterpriseType" visibility="public">
+        <ownedParameter xmi:id="_rauO0TZzEee7VKszZYHQZQ" name="envCoreEnterpriseType" type="_q43e8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rax5MDZzEee7VKszZYHQZQ" name="getEnvCoreEntPollutant" visibility="public">
+        <ownedParameter xmi:id="_rax5MTZzEee7VKszZYHQZQ" name="return" type="_q5AB0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ra1jkDZzEee7VKszZYHQZQ" name="setEnvCoreEntPollutant" visibility="public">
+        <ownedParameter xmi:id="_ra1jkTZzEee7VKszZYHQZQ" name="envCoreEntPollutant" type="_q5AB0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ra4m4DZzEee7VKszZYHQZQ" name="getEnvCoreFuelType" visibility="public">
+        <ownedParameter xmi:id="_ra4m4TZzEee7VKszZYHQZQ" name="return" type="_q5KZ4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ra8RQDZzEee7VKszZYHQZQ" name="setEnvCoreFuelType" visibility="public">
+        <ownedParameter xmi:id="_ra8RQTZzEee7VKszZYHQZQ" name="envCoreFuelType" type="_q5KZ4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ra_UkDZzEee7VKszZYHQZQ" name="getEnvCoreGasFunctionType" visibility="public">
+        <ownedParameter xmi:id="_ra_UkTZzEee7VKszZYHQZQ" name="return" type="_q5SVsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbC-8DZzEee7VKszZYHQZQ" name="setEnvCoreGasFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rbC-8TZzEee7VKszZYHQZQ" name="envCoreGasFunctionType" type="_q5SVsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbGCQDZzEee7VKszZYHQZQ" name="getEnvCoreIndustryCategory" visibility="public">
+        <ownedParameter xmi:id="_rbGCQTZzEee7VKszZYHQZQ" name="return" type="_q5ZDYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbKTsDZzEee7VKszZYHQZQ" name="setEnvCoreIndustryCategory" visibility="public">
+        <ownedParameter xmi:id="_rbKTsTZzEee7VKszZYHQZQ" name="envCoreIndustryCategory" type="_q5ZDYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbNXADZzEee7VKszZYHQZQ" name="getEnvCoreKeyPointType" visibility="public">
+        <ownedParameter xmi:id="_rbNXATZzEee7VKszZYHQZQ" name="return" type="_q5fKADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbRBYDZzEee7VKszZYHQZQ" name="setEnvCoreKeyPointType" visibility="public">
+        <ownedParameter xmi:id="_rbRBYTZzEee7VKszZYHQZQ" name="envCoreKeyPointType" type="_q5fKADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbUrwDZzEee7VKszZYHQZQ" name="getEnvCoreLetoutStateControl" visibility="public">
+        <ownedParameter xmi:id="_rbUrwTZzEee7VKszZYHQZQ" name="return" type="_q5qwMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbXvEDZzEee7VKszZYHQZQ" name="setEnvCoreLetoutStateControl" visibility="public">
+        <ownedParameter xmi:id="_rbXvETZzEee7VKszZYHQZQ" name="envCoreLetoutStateControl" type="_q5qwMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbayYDZzEee7VKszZYHQZQ" name="getEnvCoreOutletType" visibility="public">
+        <ownedParameter xmi:id="_rbayYTZzEee7VKszZYHQZQ" name="return" type="_q5z6IDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbecwDZzEee7VKszZYHQZQ" name="setEnvCoreOutletType" visibility="public">
+        <ownedParameter xmi:id="_rbecwTZzEee7VKszZYHQZQ" name="envCoreOutletType" type="_q5z6IDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbiHIDZzEee7VKszZYHQZQ" name="getEnvCorePollStandardLimit" visibility="public">
+        <ownedParameter xmi:id="_rbiHITZzEee7VKszZYHQZQ" name="return" type="_q59rIDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbmYkDZzEee7VKszZYHQZQ" name="setEnvCorePollStandardLimit" visibility="public">
+        <ownedParameter xmi:id="_rbmYkTZzEee7VKszZYHQZQ" name="envCorePollStandardLimit" type="_q59rIDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbqC8DZzEee7VKszZYHQZQ" name="getEnvCorePollutant" visibility="public">
+        <ownedParameter xmi:id="_rbqC8TZzEee7VKszZYHQZQ" name="return" type="_q6JRUDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbttUDZzEee7VKszZYHQZQ" name="setEnvCorePollutant" visibility="public">
+        <ownedParameter xmi:id="_rbttUTZzEee7VKszZYHQZQ" name="envCorePollutant" type="_q6JRUDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rbx-wDZzEee7VKszZYHQZQ" name="getEnvCorePollutantType" visibility="public">
+        <ownedParameter xmi:id="_rbx-wTZzEee7VKszZYHQZQ" name="return" type="_q6TpYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rb1pIDZzEee7VKszZYHQZQ" name="setEnvCorePollutantType" visibility="public">
+        <ownedParameter xmi:id="_rb1pITZzEee7VKszZYHQZQ" name="envCorePollutantType" type="_q6TpYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rb5TgDZzEee7VKszZYHQZQ" name="getEnvCorePollutantUnit" visibility="public">
+        <ownedParameter xmi:id="_rb5TgTZzEee7VKszZYHQZQ" name="return" type="_q6eogDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rb-MADZzEee7VKszZYHQZQ" name="setEnvCorePollutantUnit" visibility="public">
+        <ownedParameter xmi:id="_rb-MATZzEee7VKszZYHQZQ" name="envCorePollutantUnit" type="_q6eogDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcBPUDZzEee7VKszZYHQZQ" name="getEnvCoreRadiateSafetyPermit" visibility="public">
+        <ownedParameter xmi:id="_rcBPUTZzEee7VKszZYHQZQ" name="return" type="_q6lWMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcFgwDZzEee7VKszZYHQZQ" name="setEnvCoreRadiateSafetyPermit" visibility="public">
+        <ownedParameter xmi:id="_rcFgwTZzEee7VKszZYHQZQ" name="envCoreRadiateSafetyPermit" type="_q6lWMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcJLIDZzEee7VKszZYHQZQ" name="getEnvCoreRadioactiveSource" visibility="public">
+        <ownedParameter xmi:id="_rcJLITZzEee7VKszZYHQZQ" name="return" type="_q6vuQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcM1gDZzEee7VKszZYHQZQ" name="setEnvCoreRadioactiveSource" visibility="public">
+        <ownedParameter xmi:id="_rcM1gTZzEee7VKszZYHQZQ" name="envCoreRadioactiveSource" type="_q6vuQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcQf4DZzEee7VKszZYHQZQ" name="getEnvCoreRayDevice" visibility="public">
+        <ownedParameter xmi:id="_rcQf4TZzEee7VKszZYHQZQ" name="return" type="_q63qEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcTjMDZzEee7VKszZYHQZQ" name="setEnvCoreRayDevice" visibility="public">
+        <ownedParameter xmi:id="_rcTjMTZzEee7VKszZYHQZQ" name="envCoreRayDevice" type="_q63qEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcX0oDZzEee7VKszZYHQZQ" name="getEnvCoreRegisterType" visibility="public">
+        <ownedParameter xmi:id="_rcX0oTZzEee7VKszZYHQZQ" name="return" type="_q6_l4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcbfADZzEee7VKszZYHQZQ" name="setEnvCoreRegisterType" visibility="public">
+        <ownedParameter xmi:id="_rcbfATZzEee7VKszZYHQZQ" name="envCoreRegisterType" type="_q6_l4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rceiUDZzEee7VKszZYHQZQ" name="getEnvCoreSewageDischarge" visibility="public">
+        <ownedParameter xmi:id="_rceiUTZzEee7VKszZYHQZQ" name="return" type="_q7HhsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcizwDZzEee7VKszZYHQZQ" name="setEnvCoreSewageDischarge" visibility="public">
+        <ownedParameter xmi:id="_rcizwTZzEee7VKszZYHQZQ" name="envCoreSewageDischarge" type="_q7HhsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcmeIDZzEee7VKszZYHQZQ" name="getEnvCoreSubordination" visibility="public">
+        <ownedParameter xmi:id="_rcmeITZzEee7VKszZYHQZQ" name="return" type="_q7PdgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcqvkDZzEee7VKszZYHQZQ" name="setEnvCoreSubordination" visibility="public">
+        <ownedParameter xmi:id="_rcqvkTZzEee7VKszZYHQZQ" name="envCoreSubordination" type="_q7PdgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcuZ8DZzEee7VKszZYHQZQ" name="getEnvCoreValley" visibility="public">
+        <ownedParameter xmi:id="_rcuZ8TZzEee7VKszZYHQZQ" name="return" type="_q7WLMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rcyEUDZzEee7VKszZYHQZQ" name="setEnvCoreValley" visibility="public">
+        <ownedParameter xmi:id="_rcyEUTZzEee7VKszZYHQZQ" name="envCoreValley" type="_q7WLMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rc1usDZzEee7VKszZYHQZQ" name="getEnvCoreValleyFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rc1usTZzEee7VKszZYHQZQ" name="return" type="_q7df8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rc6AIDZzEee7VKszZYHQZQ" name="setEnvCoreValleyFunctionType" visibility="public">
+        <ownedParameter xmi:id="_rc6AITZzEee7VKszZYHQZQ" name="envCoreValleyFunctionType" type="_q7df8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rc-4oDZzEee7VKszZYHQZQ" name="getEnvMonitorAlarmLog" visibility="public">
+        <ownedParameter xmi:id="_rc-4oTZzEee7VKszZYHQZQ" name="return" type="_q7k0sDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdDKEDZzEee7VKszZYHQZQ" name="setEnvMonitorAlarmLog" visibility="public">
+        <ownedParameter xmi:id="_rdDKETZzEee7VKszZYHQZQ" name="envMonitorAlarmLog" type="_q7k0sDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdGNYDZzEee7VKszZYHQZQ" name="getEnvMonitorAlarmRegistForm" visibility="public">
+        <ownedParameter xmi:id="_rdGNYTZzEee7VKszZYHQZQ" name="return" type="_q7q7UDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdKe0DZzEee7VKszZYHQZQ" name="setEnvMonitorAlarmRegistForm" visibility="public">
+        <ownedParameter xmi:id="_rdKe0TZzEee7VKszZYHQZQ" name="envMonitorAlarmRegistForm" type="_q7q7UDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdNiIDZzEee7VKszZYHQZQ" name="getEnvMonitorGasAlarm24hours" visibility="public">
+        <ownedParameter xmi:id="_rdNiITZzEee7VKszZYHQZQ" name="return" type="_q7yQEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdSaoDZzEee7VKszZYHQZQ" name="setEnvMonitorGasAlarm24hours" visibility="public">
+        <ownedParameter xmi:id="_rdSaoTZzEee7VKszZYHQZQ" name="envMonitorGasAlarm24hours" type="_q7yQEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdXTIDZzEee7VKszZYHQZQ" name="getLgtAlarmManage" visibility="public">
+        <ownedParameter xmi:id="_rdXTITZzEee7VKszZYHQZQ" name="return" type="_q749wDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdgdEDZzEee7VKszZYHQZQ" name="setLgtAlarmManage" visibility="public">
+        <ownedParameter xmi:id="_rdgdETZzEee7VKszZYHQZQ" name="lgtAlarmManage" type="_q749wDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdkugDZzEee7VKszZYHQZQ" name="getLgtAlarmThreshold" visibility="public">
+        <ownedParameter xmi:id="_rdkugTZzEee7VKszZYHQZQ" name="return" type="_q7_EYDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdpnADZzEee7VKszZYHQZQ" name="setLgtAlarmThreshold" visibility="public">
+        <ownedParameter xmi:id="_rdpnATZzEee7VKszZYHQZQ" name="lgtAlarmThreshold" type="_q7_EYDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdtRYDZzEee7VKszZYHQZQ" name="getLgtAlarmTimes" visibility="public">
+        <ownedParameter xmi:id="_rdtRYTZzEee7VKszZYHQZQ" name="return" type="_q8FyEDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rdxi0DZzEee7VKszZYHQZQ" name="setLgtAlarmTimes" visibility="public">
+        <ownedParameter xmi:id="_rdxi0TZzEee7VKszZYHQZQ" name="lgtAlarmTimes" type="_q8FyEDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rd1NMDZzEee7VKszZYHQZQ" name="getLgtBlacklistManage" visibility="public">
+        <ownedParameter xmi:id="_rd1NMTZzEee7VKszZYHQZQ" name="return" type="_q8LRoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rd5eoDZzEee7VKszZYHQZQ" name="setLgtBlacklistManage" visibility="public">
+        <ownedParameter xmi:id="_rd5eoTZzEee7VKszZYHQZQ" name="lgtBlacklistManage" type="_q8LRoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rd9JADZzEee7VKszZYHQZQ" name="getLgtCarDispatch" visibility="public">
+        <ownedParameter xmi:id="_rd9JATZzEee7VKszZYHQZQ" name="return" type="_q8RYQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reAzYDZzEee7VKszZYHQZQ" name="setLgtCarDispatch" visibility="public">
+        <ownedParameter xmi:id="_reAzYTZzEee7VKszZYHQZQ" name="lgtCarDispatch" type="_q8RYQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reEdwDZzEee7VKszZYHQZQ" name="getLgtCarRealTimePostion" visibility="public">
+        <ownedParameter xmi:id="_reEdwTZzEee7VKszZYHQZQ" name="return" type="_q8YF8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reIIIDZzEee7VKszZYHQZQ" name="setLgtCarRealTimePostion" visibility="public">
+        <ownedParameter xmi:id="_reIIITZzEee7VKszZYHQZQ" name="lgtCarRealTimePostion" type="_q8YF8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reLygDZzEee7VKszZYHQZQ" name="getLgtDanCarAttRel" visibility="public">
+        <ownedParameter xmi:id="_reLygTZzEee7VKszZYHQZQ" name="return" type="_q8eMkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rePc4DZzEee7VKszZYHQZQ" name="setLgtDanCarAttRel" visibility="public">
+        <ownedParameter xmi:id="_rePc4TZzEee7VKszZYHQZQ" name="lgtDanCarAttRel" type="_q8eMkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reTHQDZzEee7VKszZYHQZQ" name="getLgtDangerousCarInfo" visibility="public">
+        <ownedParameter xmi:id="_reTHQTZzEee7VKszZYHQZQ" name="return" type="_q8kTMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reWxoDZzEee7VKszZYHQZQ" name="setLgtDangerousCarInfo" visibility="public">
+        <ownedParameter xmi:id="_reXYsDZzEee7VKszZYHQZQ" name="lgtDangerousCarInfo" type="_q8kTMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reacADZzEee7VKszZYHQZQ" name="getLgtEmergencyInfo" visibility="public">
+        <ownedParameter xmi:id="_reacATZzEee7VKszZYHQZQ" name="return" type="_q8qZ0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_refUgDZzEee7VKszZYHQZQ" name="setLgtEmergencyInfo" visibility="public">
+        <ownedParameter xmi:id="_refUgTZzEee7VKszZYHQZQ" name="lgtEmergencyInfo" type="_q8qZ0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rejl8DZzEee7VKszZYHQZQ" name="getLgtEnterprise" visibility="public">
+        <ownedParameter xmi:id="_rejl8TZzEee7VKszZYHQZQ" name="return" type="_q8xHgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_reoecDZzEee7VKszZYHQZQ" name="setLgtEnterprise" visibility="public">
+        <ownedParameter xmi:id="_reoecTZzEee7VKszZYHQZQ" name="lgtEnterprise" type="_q8xHgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rerhwDZzEee7VKszZYHQZQ" name="getLgtKaOpen" visibility="public">
+        <ownedParameter xmi:id="_rerhwTZzEee7VKszZYHQZQ" name="return" type="_q83OIDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_revzMDZzEee7VKszZYHQZQ" name="setLgtKaOpen" visibility="public">
+        <ownedParameter xmi:id="_revzMTZzEee7VKszZYHQZQ" name="lgtKaOpen" type="_q83OIDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rey2gDZzEee7VKszZYHQZQ" name="getLgtParkArea" visibility="public">
+        <ownedParameter xmi:id="_rey2gTZzEee7VKszZYHQZQ" name="return" type="_q89UwDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_re2g4DZzEee7VKszZYHQZQ" name="setLgtParkArea" visibility="public">
+        <ownedParameter xmi:id="_re2g4TZzEee7VKszZYHQZQ" name="lgtParkArea" type="_q89UwDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_re6LQDZzEee7VKszZYHQZQ" name="getLgtRestrictedAreaInfo" visibility="public">
+        <ownedParameter xmi:id="_re6LQTZzEee7VKszZYHQZQ" name="return" type="_q9GesDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_re91oDZzEee7VKszZYHQZQ" name="setLgtRestrictedAreaInfo" visibility="public">
+        <ownedParameter xmi:id="_re91oTZzEee7VKszZYHQZQ" name="lgtRestrictedAreaInfo" type="_q9GesDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfBgADZzEee7VKszZYHQZQ" name="getLgtSolveRoute" visibility="public">
+        <ownedParameter xmi:id="_rfBgATZzEee7VKszZYHQZQ" name="return" type="_q9NzcDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfFKYDZzEee7VKszZYHQZQ" name="setLgtSolveRoute" visibility="public">
+        <ownedParameter xmi:id="_rfFKYTZzEee7VKszZYHQZQ" name="lgtSolveRoute" type="_q9NzcDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfI0wDZzEee7VKszZYHQZQ" name="getLgtSourceGoods" visibility="public">
+        <ownedParameter xmi:id="_rfI0wTZzEee7VKszZYHQZQ" name="return" type="_q9TTADZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfMfIDZzEee7VKszZYHQZQ" name="setLgtSourceGoods" visibility="public">
+        <ownedParameter xmi:id="_rfMfITZzEee7VKszZYHQZQ" name="lgtSourceGoods" type="_q9TTADZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfQJgDZzEee7VKszZYHQZQ" name="getLgtSourceGoodsInfo" visibility="public">
+        <ownedParameter xmi:id="_rfQJgTZzEee7VKszZYHQZQ" name="return" type="_q9aAsDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfTz4DZzEee7VKszZYHQZQ" name="setLgtSourceGoodsInfo" visibility="public">
+        <ownedParameter xmi:id="_rfTz4TZzEee7VKszZYHQZQ" name="lgtSourceGoodsInfo" type="_q9aAsDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfYFUDZzEee7VKszZYHQZQ" name="getLgtWaybillGoods" visibility="public">
+        <ownedParameter xmi:id="_rfYFUTZzEee7VKszZYHQZQ" name="return" type="_q9ijkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfcWwDZzEee7VKszZYHQZQ" name="setLgtWaybillGoods" visibility="public">
+        <ownedParameter xmi:id="_rfcWwTZzEee7VKszZYHQZQ" name="lgtWaybillGoods" type="_q9ijkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rffaEDZzEee7VKszZYHQZQ" name="getLgtWaybillGoodsTemplate" visibility="public">
+        <ownedParameter xmi:id="_rffaETZzEee7VKszZYHQZQ" name="return" type="_q9sUkDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfjEcDZzEee7VKszZYHQZQ" name="setLgtWaybillGoodsTemplate" visibility="public">
+        <ownedParameter xmi:id="_rfjEcTZzEee7VKszZYHQZQ" name="lgtWaybillGoodsTemplate" type="_q9sUkDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfmu0DZzEee7VKszZYHQZQ" name="getLgtWaybillInfo" visibility="public">
+        <ownedParameter xmi:id="_rfmu0TZzEee7VKszZYHQZQ" name="return" type="_q9zpUDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfrnUDZzEee7VKszZYHQZQ" name="setLgtWaybillInfo" visibility="public">
+        <ownedParameter xmi:id="_rfrnUTZzEee7VKszZYHQZQ" name="lgtWaybillInfo" type="_q9zpUDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfvRsDZzEee7VKszZYHQZQ" name="getSecCEiAccidents" visibility="public">
+        <ownedParameter xmi:id="_rfvRsTZzEee7VKszZYHQZQ" name="return" type="_q95v8DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rfzjIDZzEee7VKszZYHQZQ" name="setSecCEiAccidents" visibility="public">
+        <ownedParameter xmi:id="_rfzjITZzEee7VKszZYHQZQ" name="secCEiAccidents" type="_q95v8DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rf3NgDZzEee7VKszZYHQZQ" name="getSecCEiAdmiliceinfo" visibility="public">
+        <ownedParameter xmi:id="_rf3NgTZzEee7VKszZYHQZQ" name="return" type="_q9_2kDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rf8tEDZzEee7VKszZYHQZQ" name="setSecCEiAdmiliceinfo" visibility="public">
+        <ownedParameter xmi:id="_rf8tETZzEee7VKszZYHQZQ" name="secCEiAdmiliceinfo" type="_q9_2kDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgBlkDZzEee7VKszZYHQZQ" name="getSecCEiChemical" visibility="public">
+        <ownedParameter xmi:id="_rgBlkTZzEee7VKszZYHQZQ" name="return" type="_q-K1sDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgF3ADZzEee7VKszZYHQZQ" name="setSecCEiChemical" visibility="public">
+        <ownedParameter xmi:id="_rgF3ATZzEee7VKszZYHQZQ" name="secCEiChemical" type="_q-K1sDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgJhYDZzEee7VKszZYHQZQ" name="getSecCEiDangerindustry" visibility="public">
+        <ownedParameter xmi:id="_rgJhYTZzEee7VKszZYHQZQ" name="return" type="_q-QVQDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgPA8DZzEee7VKszZYHQZQ" name="setSecCEiDangerindustry" visibility="public">
+        <ownedParameter xmi:id="_rgPA8TZzEee7VKszZYHQZQ" name="secCEiDangerindustry" type="_q-QVQDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgSrUDZzEee7VKszZYHQZQ" name="getSecCEiDangsrc" visibility="public">
+        <ownedParameter xmi:id="_rgSrUTZzEee7VKszZYHQZQ" name="return" type="_q-Wb4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgYx8DZzEee7VKszZYHQZQ" name="setSecCEiDangsrc" visibility="public">
+        <ownedParameter xmi:id="_rgYx8TZzEee7VKszZYHQZQ" name="secCEiDangsrc" type="_q-Wb4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgccUDZzEee7VKszZYHQZQ" name="getSecCEiEnterpriseaudit" visibility="public">
+        <ownedParameter xmi:id="_rgccUTZzEee7VKszZYHQZQ" name="return" type="_q-dwoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rghU0DZzEee7VKszZYHQZQ" name="setSecCEiEnterpriseaudit" visibility="public">
+        <ownedParameter xmi:id="_rghU0TZzEee7VKszZYHQZQ" name="secCEiEnterpriseaudit" type="_q-dwoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgm0YDZzEee7VKszZYHQZQ" name="getSecCEiEnterpriseinfo" visibility="public">
+        <ownedParameter xmi:id="_rgm0YTZzEee7VKszZYHQZQ" name="return" type="_q-j3QDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgtiEDZzEee7VKszZYHQZQ" name="setSecCEiEnterpriseinfo" visibility="public">
+        <ownedParameter xmi:id="_rgtiETZzEee7VKszZYHQZQ" name="secCEiEnterpriseinfo" type="_q-j3QDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rgyakDZzEee7VKszZYHQZQ" name="getSecCEiFireworksindustry" visibility="public">
+        <ownedParameter xmi:id="_rgyakTZzEee7VKszZYHQZQ" name="return" type="_q-pW0DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rg36IDZzEee7VKszZYHQZQ" name="setSecCEiFireworksindustry" visibility="public">
+        <ownedParameter xmi:id="_rg36ITZzEee7VKszZYHQZQ" name="secCEiFireworksindustry" type="_q-pW0DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rg7kgDZzEee7VKszZYHQZQ" name="getSecCEiKeyplace" visibility="public">
+        <ownedParameter xmi:id="_rg7kgTZzEee7VKszZYHQZQ" name="return" type="_q-wEgDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhBEEDZzEee7VKszZYHQZQ" name="setSecCEiKeyplace" visibility="public">
+        <ownedParameter xmi:id="_rhBEETZzEee7VKszZYHQZQ" name="secCEiKeyplace" type="_q-wEgDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhEucDZzEee7VKszZYHQZQ" name="getSecCEiSecucheck" visibility="public">
+        <ownedParameter xmi:id="_rhEucTZzEee7VKszZYHQZQ" name="return" type="_q-6ckDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhK1EDZzEee7VKszZYHQZQ" name="setSecCEiSecucheck" visibility="public">
+        <ownedParameter xmi:id="_rhK1ETZzEee7VKszZYHQZQ" name="secCEiSecucheck" type="_q-6ckDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhOfcDZzEee7VKszZYHQZQ" name="getSecCEiStand" visibility="public">
+        <ownedParameter xmi:id="_rhOfcTZzEee7VKszZYHQZQ" name="return" type="_q_AjMDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhSw4DZzEee7VKszZYHQZQ" name="setSecCEiStand" visibility="public">
+        <ownedParameter xmi:id="_rhSw4TZzEee7VKszZYHQZQ" name="secCEiStand" type="_q_AjMDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhXpYDZzEee7VKszZYHQZQ" name="getSecCStEntsafescore" visibility="public">
+        <ownedParameter xmi:id="_rhXpYTZzEee7VKszZYHQZQ" name="return" type="_q_HQ4DZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhb60DZzEee7VKszZYHQZQ" name="setSecCStEntsafescore" visibility="public">
+        <ownedParameter xmi:id="_rhb60TZzEee7VKszZYHQZQ" name="secCStEntsafescore" type="_q_HQ4DZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhe-IDZzEee7VKszZYHQZQ" name="getEnergySupplyEnergyUnitData" visibility="public">
+        <ownedParameter xmi:id="_rhe-ITZzEee7VKszZYHQZQ" name="return" type="_q_MwcDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhjPkDZzEee7VKszZYHQZQ" name="setEnergySupplyEnergyUnitData" visibility="public">
+        <ownedParameter xmi:id="_rhjPkTZzEee7VKszZYHQZQ" name="energySupplyEnergyUnitData" type="_q_MwcDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhmS4DZzEee7VKszZYHQZQ" name="getLgtPipeLocation" visibility="public">
+        <ownedParameter xmi:id="_rhmS4TZzEee7VKszZYHQZQ" name="return" type="_q_S3EDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhp9QDZzEee7VKszZYHQZQ" name="setLgtPipeLocation" visibility="public">
+        <ownedParameter xmi:id="_rhqkUDZzEee7VKszZYHQZQ" name="lgtPipeLocation" type="_q_S3EDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhu1wDZzEee7VKszZYHQZQ" name="getLgtPipeManage" visibility="public">
+        <ownedParameter xmi:id="_rhu1wTZzEee7VKszZYHQZQ" name="return" type="_q_YWoDZzEee7VKszZYHQZQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_rhzHMDZzEee7VKszZYHQZQ" name="setLgtPipeManage" visibility="public">
+        <ownedParameter xmi:id="_rhzHMTZzEee7VKszZYHQZQ" name="lgtPipeManage" type="_q_YWoDZzEee7VKszZYHQZQ"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qxnncDZzEee7VKszZYHQZQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxnncTZzEee7VKszZYHQZQ" name="mdd">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxnncjZzEee7VKszZYHQZQ" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxoOgDZzEee7VKszZYHQZQ" name="BaseDAO"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxoOgTZzEee7VKszZYHQZQ" name="model">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxoOgjZzEee7VKszZYHQZQ" name="*"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxqDsDZzEee7VKszZYHQZQ" name="EnergyCollectData"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxqDsTZzEee7VKszZYHQZQ" name="EnergyCollectMachine"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxo1kDZzEee7VKszZYHQZQ" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxo1kTZzEee7VKszZYHQZQ" name="JSONSerializer"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxpcqjZzEee7VKszZYHQZQ" name="*"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxoOgzZzEee7VKszZYHQZQ" name="opensymphony">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxoOhDZzEee7VKszZYHQZQ" name="xwork2">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxoOhTZzEee7VKszZYHQZQ" name="ActionSupport"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxqDsjZzEee7VKszZYHQZQ" name="ActionContext"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxpcpzZzEee7VKszZYHQZQ" name="alibaba">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxpcqDZzEee7VKszZYHQZQ" name="fastjson">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxpcqTZzEee7VKszZYHQZQ" name="JSONObject"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qxoOhjZzEee7VKszZYHQZQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxoOhzZzEee7VKszZYHQZQ" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxoOiDZzEee7VKszZYHQZQ" name="struts2">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxoOiTZzEee7VKszZYHQZQ" name="ServletActionContext"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qxo1kjZzEee7VKszZYHQZQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxo1kzZzEee7VKszZYHQZQ" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_qxo1lDZzEee7VKszZYHQZQ" name="BufferedReader"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_qxo1lTZzEee7VKszZYHQZQ" name="InputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_qxo1ljZzEee7VKszZYHQZQ" name="InputStreamReader"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxo1lzZzEee7VKszZYHQZQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_qxo1mDZzEee7VKszZYHQZQ" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_qxpcoDZzEee7VKszZYHQZQ" name="List"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxpcoTZzEee7VKszZYHQZQ" name="concurrent">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxpcojZzEee7VKszZYHQZQ" name="CountDownLatch"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qxpcozZzEee7VKszZYHQZQ" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxpcpDZzEee7VKszZYHQZQ" name="servlet">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxpcpTZzEee7VKszZYHQZQ" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxpcpjZzEee7VKszZYHQZQ" name="HttpServletRequest"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qxqDszZzEee7VKszZYHQZQ" name="oracle">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qxqDtDZzEee7VKszZYHQZQ" name="net">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qxqDtTZzEee7VKszZYHQZQ" name="aso">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qxqDtjZzEee7VKszZYHQZQ" name="e"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_qyoUEDZzEee7VKszZYHQZQ" name="EnergyAlarmInterval"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_qzJ4gDZzEee7VKszZYHQZQ" name="EnergyCollectSpot"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_qzeBkDZzEee7VKszZYHQZQ" name="EnergyConsumptionDataRed"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_qzugQDZzEee7VKszZYHQZQ" name="EnergyConsumptionRecord"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_qz77oDZzEee7VKszZYHQZQ" name="EnergyEnterpriseInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q0J-EDZzEee7VKszZYHQZQ" name="EnergyEnterprisePosition"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q0XZcDZzEee7VKszZYHQZQ" name="EnergyEnterpriseTarget"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q0mC8DZzEee7VKszZYHQZQ" name="EnergyEntMonthReport"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q07aIDZzEee7VKszZYHQZQ" name="EnergyEntYearReport"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q1W38DZzEee7VKszZYHQZQ" name="EnergyGardenTarget"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q1rBADZzEee7VKszZYHQZQ" name="EnergyMessageRelEnt"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q15qgDZzEee7VKszZYHQZQ" name="EnergyMeterDevice"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q2F3wDZzEee7VKszZYHQZQ" name="EnergyRawCoal"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q2W9gDZzEee7VKszZYHQZQ" name="EnergyStaticData"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q2ncMDZzEee7VKszZYHQZQ" name="EnergySynthesizeEnergyUse"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q2vYADZzEee7VKszZYHQZQ" name="EnergyTerminal"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q23T0DZzEee7VKszZYHQZQ" name="EnergyTradeFile"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3AdwDZzEee7VKszZYHQZQ" name="EnergyTradeInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3IZkDZzEee7VKszZYHQZQ" name="EnergyUseAudit"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3QVYDZzEee7VKszZYHQZQ" name="EnergyUseAuditRecord"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3YRMDZzEee7VKszZYHQZQ" name="EnergyUseEnergyEquipment"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3g0EDZzEee7VKszZYHQZQ" name="EnergyVapour"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3nhwDZzEee7VKszZYHQZQ" name="EnergyWaterMeter"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3wEoDZzEee7VKszZYHQZQ" name="EneSupEneUnitRelFile"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q33ZYDZzEee7VKszZYHQZQ" name="EneUseEneEquipmentFile"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q3-HEDZzEee7VKszZYHQZQ" name="EnvCoreAreas"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4ENsDZzEee7VKszZYHQZQ" name="EnvCoreControlZone"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4K7YDZzEee7VKszZYHQZQ" name="EnvCoreDischargeOutletInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4RpEDZzEee7VKszZYHQZQ" name="EnvCoreDischargeRule"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4Zk4DZzEee7VKszZYHQZQ" name="EnvCoreEmergencyPlan"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4gSkDZzEee7VKszZYHQZQ" name="EnvCoreEnterpriseInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4nAQDZzEee7VKszZYHQZQ" name="EnvCoreEnterpriseKind"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q4tt8DZzEee7VKszZYHQZQ" name="EnvCoreEnterpriseScale"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q43e8DZzEee7VKszZYHQZQ" name="EnvCoreEnterpriseType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5AB0DZzEee7VKszZYHQZQ" name="EnvCoreEntPollutant"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5KZ4DZzEee7VKszZYHQZQ" name="EnvCoreFuelType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5SVsDZzEee7VKszZYHQZQ" name="EnvCoreGasFunctionType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5ZDYDZzEee7VKszZYHQZQ" name="EnvCoreIndustryCategory"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5fKADZzEee7VKszZYHQZQ" name="EnvCoreKeyPointType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5qwMDZzEee7VKszZYHQZQ" name="EnvCoreLetoutStateControl"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q5z6IDZzEee7VKszZYHQZQ" name="EnvCoreOutletType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q59rIDZzEee7VKszZYHQZQ" name="EnvCorePollStandardLimit"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q6JRUDZzEee7VKszZYHQZQ" name="EnvCorePollutant"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q6TpYDZzEee7VKszZYHQZQ" name="EnvCorePollutantType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q6eogDZzEee7VKszZYHQZQ" name="EnvCorePollutantUnit"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q6lWMDZzEee7VKszZYHQZQ" name="EnvCoreRadiateSafetyPermit"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q6vuQDZzEee7VKszZYHQZQ" name="EnvCoreRadioactiveSource"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q63qEDZzEee7VKszZYHQZQ" name="EnvCoreRayDevice"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q6_l4DZzEee7VKszZYHQZQ" name="EnvCoreRegisterType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7HhsDZzEee7VKszZYHQZQ" name="EnvCoreSewageDischarge"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7PdgDZzEee7VKszZYHQZQ" name="EnvCoreSubordination"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7WLMDZzEee7VKszZYHQZQ" name="EnvCoreValley"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7df8DZzEee7VKszZYHQZQ" name="EnvCoreValleyFunctionType"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7k0sDZzEee7VKszZYHQZQ" name="EnvMonitorAlarmLog"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7q7UDZzEee7VKszZYHQZQ" name="EnvMonitorAlarmRegistForm"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7yQEDZzEee7VKszZYHQZQ" name="EnvMonitorGasAlarm24hours"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q749wDZzEee7VKszZYHQZQ" name="LgtAlarmManage"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q7_EYDZzEee7VKszZYHQZQ" name="LgtAlarmThreshold"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8FyEDZzEee7VKszZYHQZQ" name="LgtAlarmTimes"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8LRoDZzEee7VKszZYHQZQ" name="LgtBlacklistManage"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8RYQDZzEee7VKszZYHQZQ" name="LgtCarDispatch"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8YF8DZzEee7VKszZYHQZQ" name="LgtCarRealTimePostion"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8eMkDZzEee7VKszZYHQZQ" name="LgtDanCarAttRel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8kTMDZzEee7VKszZYHQZQ" name="LgtDangerousCarInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8qZ0DZzEee7VKszZYHQZQ" name="LgtEmergencyInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q8xHgDZzEee7VKszZYHQZQ" name="LgtEnterprise"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q83OIDZzEee7VKszZYHQZQ" name="LgtKaOpen"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q89UwDZzEee7VKszZYHQZQ" name="LgtParkArea"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9GesDZzEee7VKszZYHQZQ" name="LgtRestrictedAreaInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9NzcDZzEee7VKszZYHQZQ" name="LgtSolveRoute"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9TTADZzEee7VKszZYHQZQ" name="LgtSourceGoods"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9aAsDZzEee7VKszZYHQZQ" name="LgtSourceGoodsInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9ijkDZzEee7VKszZYHQZQ" name="LgtWaybillGoods"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9sUkDZzEee7VKszZYHQZQ" name="LgtWaybillGoodsTemplate"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9zpUDZzEee7VKszZYHQZQ" name="LgtWaybillInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q95v8DZzEee7VKszZYHQZQ" name="SecCEiAccidents"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q9_2kDZzEee7VKszZYHQZQ" name="SecCEiAdmiliceinfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-K1sDZzEee7VKszZYHQZQ" name="SecCEiChemical"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-QVQDZzEee7VKszZYHQZQ" name="SecCEiDangerindustry"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-Wb4DZzEee7VKszZYHQZQ" name="SecCEiDangsrc"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-dwoDZzEee7VKszZYHQZQ" name="SecCEiEnterpriseaudit"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-j3QDZzEee7VKszZYHQZQ" name="SecCEiEnterpriseinfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-pW0DZzEee7VKszZYHQZQ" name="SecCEiFireworksindustry"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-wEgDZzEee7VKszZYHQZQ" name="SecCEiKeyplace"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q-6ckDZzEee7VKszZYHQZQ" name="SecCEiSecucheck"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q_AjMDZzEee7VKszZYHQZQ" name="SecCEiStand"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q_HQ4DZzEee7VKszZYHQZQ" name="SecCStEntsafescore"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q_MwcDZzEee7VKszZYHQZQ" name="EnergySupplyEnergyUnitData"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q_S3EDZzEee7VKszZYHQZQ" name="LgtPipeLocation"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_q_YWoDZzEee7VKszZYHQZQ" name="LgtPipeManage"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_rN8-IDZzEee7VKszZYHQZQ" name="Object"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_rODEwDZzEee7VKszZYHQZQ" name="List&lt;Object>"/>
+</uml:Model>
