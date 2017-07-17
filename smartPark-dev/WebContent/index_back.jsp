@@ -119,7 +119,8 @@
 				}
 				data.forEach(function (element) {
 					Object.keys(element).forEach(function(elt, i, array) {
-						if (elt.indexOf('Time') !== -1 || elt.indexOf('time') !== -1) {
+						if (elt.indexOf('Time') !== -1 || elt.indexOf('Date') !== -1) {
+							if(elt.indexOf('Times') !== -1) return;
 							element[elt] = new Date(element[elt]).Format("yyyy-MM-dd");
 						}
 					});
@@ -161,6 +162,7 @@
 								});
 							}
 						});
+						$('#selectTable').combobox('clear');
 						$('#selectTable').combobox('loadData', data);
 					}
 				});
@@ -185,14 +187,14 @@
 							column.field = elt;
 							column.title = elt;
 							column.align = 'center';
-							if (elt.indexOf('Time') !== -1 || elt.indexOf('time') !== -1) {
-								column.editor = {
-									type : 'datebox',
-								}
-							}
-							else {
-								column.editor = {
+							column.editor = {
 									type : 'textbox',
+								}
+							if (elt.indexOf('Time') !== -1 || elt.indexOf('Date') !== -1) {
+								if(elt.indexOf('Times') == -1) {
+									column.editor = {
+										type : 'datebox',
+									}
 								}
 							}
 							columns.push(column);

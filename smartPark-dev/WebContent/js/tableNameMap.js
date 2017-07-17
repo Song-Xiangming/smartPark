@@ -48,7 +48,7 @@ var tableNameMap = {
         NO : 12,
         NAME : '企业重点场所信息'
     },
-    LGTENTERPRISEINFO : {
+    LGTENTERPRISE : {
         NO : 1,
         NAME : '企业基本信息表'
     },
@@ -56,13 +56,21 @@ var tableNameMap = {
         NO : 2,
         NAME : '区域限制表'
     },
+    LGTKAOPEN : {
+        NO : 3,
+        NAME : '卡口表'
+    },
     LGTDANGEROUSCARINFO : {
         NO : 4,
         NAME : '危险品车辆信息表'
     },
     LGTDANCARATTREL : {
         NO : 5,
-        NAME : '危险品车辆附件关系'
+        NAME : '危险品车辆附件关系表'
+    },
+    LGTPARKAREA : {
+        NO : 6,
+        NAME : '园区表'
     },
     LGTALARMTIMES : {
         NO : 7,
@@ -80,11 +88,19 @@ var tableNameMap = {
         NO : 10,
         NAME : '突发信息表'
     },
-    LGTGOODSSOURCEINFO : {
+    LGTPIPELOCATION : {
+        NO : 11,
+        NAME : '管道/储罐位置表'
+    },
+    LGTPIPEMANAGE : {
+        NO : 12,
+        NAME : '管道/储罐基本信息表'
+    },
+    LGTSOURCEGOODSINFO : {
         NO : 13,
         NAME : '货源基本信息'
     },
-    LGTGOODSMANAGEINFO : {
+    LGTSOURCEGOODS : {
         NO : 14,
         NAME : '货源管理'
     },
@@ -96,11 +112,15 @@ var tableNameMap = {
         NO : 16,
         NAME : '货物模板信息表'
     },
+    LGTSOLVEROUTE : {
+        NO : 17,
+        NAME : '路径规划表'
+    },
     LGTCARREALTIMEPOSTION : {
         NO : 18,
         NAME : '车辆实时位置表（运送运单车辆）'
     },
-    LGTVEHICLESCHEDULING : {
+    LGTCARDISPATCH : {
         NO : 19,
         NAME : '车辆调度'
     },
@@ -108,7 +128,7 @@ var tableNameMap = {
         NO : 20,
         NAME : '运单信息表'
     },
-    LGTBLACKLISTINFO : {
+    LGTBLACKLISTMANAGE : {
         NO : 21,
         NAME : '黑名单信息表'
     },
@@ -144,6 +164,14 @@ var tableNameMap = {
         NO : 8,
         NAME : '企业能源（能耗）数据记录'
     },
+    ENERGYSUPPLYENERGYUNITDATA : {
+        NO : 9,
+        NAME : '供能单位数据'
+    },
+    ENESUPENEUNITRELFILE : {
+        NO : 10,
+        NAME : '供能单位数据附件关系表'
+    },
     ENERGYRAWCOAL : {
         NO : 11,
         NAME : '原煤表'
@@ -172,6 +200,22 @@ var tableNameMap = {
         NO : 17,
         NAME : '用能审计记录表'
     },
+    ENERGYUSEENERGYEQUIPMENT : {
+        NO : 18,
+        NAME : '用能设备'
+    },
+    ENEUSEENEEQUIPMENTFILE : {
+        NO : 19,
+        NAME : '用能设备附件表'
+    },
+    ENERGYSTATICDATA : {
+        NO : 20,
+        NAME : '统计局数据'
+    },
+    ENERGYSYNTHESIZEENERGYUSE : {
+        NO : 21,
+        NAME : '综合能耗预警'
+    },
     ENERGYTERMINAL : {
         NO : 22,
         NAME : '能源计量终端'
@@ -184,6 +228,10 @@ var tableNameMap = {
         NO : 24,
         NAME : '蒸汽表'
     },
+    ENERGYMETERDEVICE : {
+        NO : 25,
+        NAME : '计量仪表'
+    },
     ENERGYCOLLECTMACHINE : {
         NO : 26,
         NAME : '采集器信息表'
@@ -191,6 +239,10 @@ var tableNameMap = {
     ENERGYCOLLECTDATA : {
         NO : 27,
         NAME : '采集点数据'
+    },
+    ENERGYALARMINTERVAL : {
+        NO : 28,
+        NAME : '预警区间表'
     },
     ENVCOREENTERPRISEKIND : {
         NO : 1,
